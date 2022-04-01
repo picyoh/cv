@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faReddit } from '@fortawesome/free-brands-svg-icons'
+
+import "./contact.css"
 
 function Contact() {
     return (
@@ -13,7 +15,7 @@ function Contact() {
                 <FontAwesomeIcon icon={ faLinkedin } />
             </Link>
             <Link to="https://github.com/picyoh">
-                <FontAwesomeIcon icon={ faTwitter } />
+                <FontAwesomeIcon icon={ faReddit } />
             </Link>
         </div>
     )

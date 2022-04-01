@@ -1,0 +1,7 @@
+.timeLine {
+  list-style-type: none;
+}
+
+.timeLine li {
+  margin: 1rem 0;
+}

@@ -1,0 +1,24 @@
+.aboutMe {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h3,
+h4,
+p {
+    flex: 100%;
+    text-align: center;
+}
+
+.photo {
+  width: 10vh;
+}
+
+.photo img {
+  border-radius: 10%;
+  width: 100%;
+  object-fit: fit-content;
+}

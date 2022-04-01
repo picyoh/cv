@@ -6,7 +6,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 import App from "./App";
-import Error from './layouts/Error'
+import Error from './components/error/Error'
 
 ReactDOM.render(
   <React.StrictMode>
