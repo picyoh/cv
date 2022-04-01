@@ -1,21 +1,32 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faReddit } from '@fortawesome/free-brands-svg-icons'
+
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { SiGmail } from 'react-icons/si'
 
 import "./contact.css"
 
 function Contact() {
     return (
         <div className="contact">
-            <Link to="https://github.com/picyoh">
-                <FontAwesomeIcon icon={ faGithub } />
+            <Link
+                to="#"
+                onClick={(e) => {
+                    window.location.href = "mailto:picotyoh@gmail.com";
+                    e.preventDefault();
+                }}
+            >
+                <div className="rounded">
+                    <SiGmail />
+                </div>
             </Link>
             <Link to="https://github.com/picyoh">
-                <FontAwesomeIcon icon={ faLinkedin } />
+                <FaGithub />
             </Link>
-            <Link to="https://github.com/picyoh">
-                <FontAwesomeIcon icon={ faReddit } />
+            <Link to="#">
+                <div className="rounded">
+                    <FaLinkedinIn />
+                </div>
             </Link>
         </div>
     )
