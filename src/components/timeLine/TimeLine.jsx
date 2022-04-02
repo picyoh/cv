@@ -9,29 +9,35 @@ import "./timeLine.css"
 function TimeLine(props) {
 
     const { datas } = props;
-
-    const icons = [
-        { certification: <GrCertificate /> },
-        { cap: <FaGraduationCap /> },
-        { books: <ImBooks /> }
-    ]
-
+    
+    const iconTypes = [
+        { name: "certification", icon: <GrCertificate /> },
+        { name: "degree", icon: <FaGraduationCap /> },
+        { name: "school", icon: <ImBooks /> },
+    ];
+    
     const list = datas.map((element, index) => {
-        return <li key={index}>
-            <span className="year-item">
-                {element.year} :&emsp;
-            </span>
-            <span className="infos">
-                {element.infos} .
-            </span>
-        </li>
+        const iconType = iconTypes.filter(iconType => iconType.name === element.type)
+        console.log(iconType)
+        return (
+            <div className="container" key={index}>
+                <div className="date">
+                    {element.year} :&emsp;
+                </div>
+                <div className="content">
+                    <div className='icon'>
+                        {iconType[0].icon}
+                    </div>
+                    {element.infos}.
+                </div>
+            </div>
+        )
     });
 
     return (
-        <ul className='timeLine'>
+        <div className='timeLine'>
             {list}
-            {/* <FontAwesomeIcon icon="fa-solid fa-file-certificate" /> */}
-        </ul>
+        </div>
     )
 }
 

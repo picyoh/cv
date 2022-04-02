@@ -1,6 +1,4 @@
 import React from 'react'
-import * as htmlToImage from 'html-to-image'
-import { toPng } from 'html-to-image'
 
 function Portfolio() {
     // const image = htmlToImage.toPng()

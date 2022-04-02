@@ -2,6 +2,12 @@
   list-style-type: none;
 }
 
-.timeLine li {
-  margin: 1rem 0;
+.timeLine .container {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  margin: 1rem;
+  background-color: var(--primary-color);
 }
