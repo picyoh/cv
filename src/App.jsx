@@ -6,7 +6,7 @@ import Portfolio from "./features/portfolio/Portfolio";
 
 function App() {
   return (
-    <div className="container">
+    <div className="appContainer">
       <AboutMe />
       <Portfolio />
       <Skills />

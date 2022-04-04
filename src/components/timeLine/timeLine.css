@@ -2,12 +2,55 @@
   list-style-type: none;
 }
 
-.timeLine .container {
+.timeLineContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  height: 38px;
+  width: 38px;
+  border: 1px solid var(--fake-white);
+  border-radius: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.text{
+  text-align: center;
 }
 
 .content {
-  margin: 1rem;
+  padding: 1rem;
+}
+
+.contentLeft {
+  flex: 30%;
+}
+
+.contentLeft .date {
+  text-align: end;
+}
+
+.contentLeft .content {
   background-color: var(--primary-color);
+  min-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentRight {
+  flex: 30%;
+}
+
+.contentRight .content {
+  background-color: var(--primary-color);
+  min-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

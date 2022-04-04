@@ -8,29 +8,29 @@ function SkillPie(props) {
     const { datas, techno } = props;
 
     const stack = [
-        { html: <FaHtml5 /> },
-        { css: <FaCss3Alt /> },
-        { js: <FaJs /> },
-        { react: <FaReact /> },
-        { redux: <SiRedux /> },
-        { nodejs: <FaNodeJs /> }
+        { name: "html", icon: <FaHtml5 /> },
+        { name: "css", icon: <FaCss3Alt /> },
+        { name: "js", icon: <FaJs /> },
+        { name: "react", icon: <FaReact /> },
+        { name: "redux", icon: <SiRedux /> },
+        { name: "nodejs", icon: <FaNodeJs /> }
     ];
 
-    const icon = stack.filter((element)=> element === techno)
+    const stackIcon = stack.filter((element) => element === techno)
 
     return (
         <PieChart>
-            <Pie 
-            data={datas} 
-            dataKey={techno}
-            isAnimationActive={false}
-            cx="50%" 
-            cy="50%"
-            outerRadius={80}
-            fill="#8884d8"
-            label 
+            <Pie
+                data={datas}
+                dataKey={techno}
+                isAnimationActive={false}
+                cx="50%"
+                cy="50%"
+                outerRadius={80}
+                fill="#8884d8"
+                label
             />
-            { icon }
+            {stackIcon.icon}
         </PieChart>
     )
 }
