@@ -10,7 +10,9 @@ function SkillPie(props) {
         { name: "full", value: skill.prc, },
         { name: "empty", value: 100 - skill.prc }
     ]
-    // Set 
+    // Set color
+    // const secondary = getComputedStyle(element).getPropertyValue("--ma-variable");
+    // console.log(secondary)
     const colors = []
     // TODO: Color Array for full and empty
     // TODO: customize labels with Icon
@@ -30,7 +32,7 @@ function SkillPie(props) {
                 fill={"#E63946"}
             >
                 {data.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={getColor(index)} />
+                    <Cell key={`cell-${index}`} fill="blue" />
                 ))}
             </Pie>
         </PieChart >

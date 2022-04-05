@@ -1,0 +1,10 @@
+.skills{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.skill{
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+}
