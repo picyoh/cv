@@ -7,14 +7,14 @@ function SkillPie(props) {
 
     // Set transparent Cell 
     const data = [
-        { name: "full", value: skill.prc, },
+        { name: "full", value: skill.prc },
         { name: "empty", value: 100 - skill.prc }
     ]
     // Set color
-    // const secondary = getComputedStyle(element).getPropertyValue("--ma-variable");
-    // console.log(secondary)
-    const colors = []
-    // TODO: Color Array for full and empty
+    const secondary = getComputedStyle(document.documentElement).getPropertyValue("--secondary-color");
+    console.log(secondary)
+    const colors = [secondary, "transparent"]
+    // TODO: Border color
     // TODO: customize labels with Icon
     // TODO: autosizing PieChart and Pie
     return (
@@ -29,10 +29,12 @@ function SkillPie(props) {
                 cx={72}
                 cy={72}
                 isAnimationActive={false}
-                fill={"#E63946"}
+                fill="#E63946"
+                stroke='transparent'
+                cornerRadius={0}
             >
                 {data.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill="blue" />
+                    <Cell key={`cell-${index}`} fill={colors[index]} />
                 ))}
             </Pie>
         </PieChart >
