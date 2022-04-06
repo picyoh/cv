@@ -17,17 +17,17 @@ function TimeLine(props) {
     ];
 
     const list = datas.map((element, index) => {
-        const iconType = iconTypes.filter(iconType => iconType.name === element.type)
+        const iconType = iconTypes.filter(iconType => iconType.name === element.type)[0];
         return (
             <div className="timeLineContainer" key={index}>
                 <div className="contentLeft">
-                    {iconType[0].name === "school" ?
+                    {iconType.name === "school" ?
                         <div className='content'>
                             <span className="text">
                                 {element.infos}.
                             </span>
                             <span className='icon'>
-                                {iconType[0].icon}
+                                {iconType.icon}
                             </span>
                         </div>
                         :
@@ -37,10 +37,10 @@ function TimeLine(props) {
                     }
                 </div>
                 <div className="contentRight">
-                    {iconType[0].name === "degree" ?
+                    {iconType.name === "degree" ?
                         <div className='content'>
                             <span className='icon'>
-                                {iconType[0].icon}
+                                {iconType.icon}
                             </span>
                             <span className="text">
                                 {element.infos}.

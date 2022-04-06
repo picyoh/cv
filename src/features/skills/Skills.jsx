@@ -20,11 +20,13 @@ function Skills() {
     ];
 
     const skillList = skillsDatas.map((skill, index) => {
-        const skillIcon = stack.filter((element) => element === stack.name)
+        const skillIcon = stack.filter((element) => element.name === skill.name)[0];
         return (
             <div className='skill' key={index}>
                 <SkillPie skill={skill} />
-                {skillIcon}
+                <div className="skillIcon">
+                    {skillIcon.icon}
+                </div>
             </div>
         )
     })

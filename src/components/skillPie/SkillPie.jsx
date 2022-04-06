@@ -12,9 +12,7 @@ function SkillPie(props) {
     ]
     // Set color
     const secondary = getComputedStyle(document.documentElement).getPropertyValue("--secondary-color");
-    console.log(secondary)
     const colors = [secondary, "transparent"]
-    // TODO: customize labels with Icon
     // TODO: autosizing PieChart and Pie
     return (
         <PieChart width={144} height={144} >
@@ -30,7 +28,6 @@ function SkillPie(props) {
                 isAnimationActive={true}
                 fill="#E63946"
                 stroke='transparent'
-                cornerRadius={0}
             >
                 {data.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={colors[index]} />

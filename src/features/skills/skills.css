@@ -7,4 +7,11 @@
     flex: 30%;
     display: flex;
     justify-content: center;
+    position: relative;
+}
+
+.skillIcon {
+    position: absolute;
+    top: 42%;
+    left: 46.5%;
 }
