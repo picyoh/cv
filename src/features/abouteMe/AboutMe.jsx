@@ -8,7 +8,7 @@ function AboutMe() {
             <h5>Curriculum Vitae</h5>
             <h1>Developpeur javaScript React</h1>
             <div className="photo">
-                <img src="illuoimnow.jpg" alt="Yohann Picot" />
+                <img src="../../datas/assets/illuoimnow.jpg" alt="Yohann Picot" />
             </div>
             <h3>Yohann Picot</h3>
             <p>
