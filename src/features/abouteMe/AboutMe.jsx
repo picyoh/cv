@@ -5,16 +5,19 @@ import "./aboutMe.css"
 function AboutMe() {
     return (
         <div className='aboutMe'>
-            <h5>Curriculum Vitae</h5>
-            <h1>Developpeur javaScript React</h1>
-            <div className="photo">
+            <div className="myPhoto">
                 <img src="../../datas/assets/illuoimnow.jpg" alt="Yohann Picot" />
             </div>
-            <h3>Yohann Picot</h3>
-            <p>
-                Curieux et volontaire, j'aime expérimenter et apprendre de nouvelles choses.
-                Mon parcours atypique me permet de m'adapter et de m'integrer assez vite a de nouveaux environements.
-            </p>
+            <div className="myId">
+                <h1>Yohann Picot</h1>
+                <h2>Developpeur javaScript React</h2>
+            </div>
+            <div className="short">
+                <p>
+                    Curieux et volontaire, j'aime expérimenter et apprendre de nouvelles choses.
+                    Mon parcours atypique me permet de m'adapter et de m'integrer assez vite a de nouveaux environements.
+                </p>
+            </div>
         </div>
     )
 }

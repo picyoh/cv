@@ -1,40 +1,53 @@
 import React from 'react'
 
-import SkillPie from '../../components/skillPie/SkillPie'
-
-import { sharedPie } from '../../datas/skillsDatas'
-import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact } from "react-icons/fa"
-import { SiRedux } from "react-icons/si"
+import { FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaReact, FaFigma } from "react-icons/fa"
+import { SiRedux, SiVisualstudiocode, SiSass, SiAdobeillustrator } from "react-icons/si"
 
 import './skills.css'
 
 function Skills() {
 
-    // const stack = [
-    //     { name: "html", icon: <FaHtml5 /> },
-    //     { name: "css", icon: <FaCss3Alt /> },
-    //     { name: "js", icon: <FaJs /> },
-    //     { name: "react", icon: <FaReact /> },
-    //     { name: "redux", icon: <SiRedux /> },
-    //     { name: "nodejs", icon: <FaNodeJs /> }
-    // ];
+    const stack = [
+        { name: "Html5", icon: <FaHtml5 /> },
+        { name: "Css3", icon: <FaCss3Alt /> },
+        { name: "JavaScript", icon: <FaJs /> },
+        { name: "React", icon: <FaReact /> },
+        { name: "Redux", icon: <SiRedux /> },
+        { name: "Sass", icon: <SiSass /> },
+        { name: "NodeJs", icon: <FaNodeJs /> },
+    ];
 
-    // const skillList = skillsDatas.map((skill, index) => {
-    //     const skillIcon = stack.filter((element) => element.name === skill.name)[0];
-    //     return (
-    //         <div className='skill' key={index}>
-    //             <SkillPie skill={skill} />
-    //             <div className="skillIcon">
-    //                 {skillIcon.icon}
-    //             </div>
-    //         </div>
-    //     )
-    // })
+    const softwares = [
+        { name: "VSCode", icon: <SiVisualstudiocode /> },
+        { name: "Figma", icon: <FaFigma /> },
+        { name: "Illustrator", icon: <SiAdobeillustrator /> }
+    ];
+
+    const listItems = (items) => {
+        return (
+            items.map((item, index) => {
+                console.log(item.name)
+                return (
+                    <div className="skill" key={index}>
+                        <span className='skillIcon'>
+                            {item.icon}
+                        </span>
+                        <p>{item.name}</p>
+                    </div>
+                )
+            })
+        )
+    }
 
     return (
         <div className='skills'>
             <h3>Skills</h3>
-            {/* {skillList} */}
+            <div className='skillList'>
+                {listItems(stack)}
+            </div>
+            <div className="skillList">
+                {listItems(softwares)}
+            </div>
         </div>
     )
 }

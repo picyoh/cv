@@ -36,6 +36,9 @@ function TimeLine(props) {
                         </div>
                     }
                 </div>
+                <div className="timeLine">
+                    
+                </div>
                 <div className="contentRight">
                     {iconType.name === "degree" ?
                         <div className='content'>

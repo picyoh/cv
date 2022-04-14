@@ -1,17 +1,19 @@
-.skills{
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.skill{
+.skillList{
     flex: 30%;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     position: relative;
 }
 
+.skill {
+    flex: 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .skillIcon {
-    position: absolute;
-    top: 42%;
-    left: 46.5%;
+    display: flex;
+    justify-content: center;
 }
