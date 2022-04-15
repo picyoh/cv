@@ -16,43 +16,47 @@ function TimeLine(props) {
         { name: "school", icon: <ImBooks /> },
     ];
 
+    const iconSpan = (icon) => {
+        return (
+            <span className='icon'>
+                {icon}
+            </span>
+        )
+    }
+
+    const dateSpan = (year) => {
+        return (
+            <div className="date">
+                {year}
+            </div >
+        )
+    }
+    // TODO refactor component
+
     const list = datas.map((element, index) => {
+
         const iconType = iconTypes.filter(iconType => iconType.name === element.type)[0];
+
         return (
             <div className="timeLineContainer" key={index}>
                 <div className="contentLeft">
                     {iconType.name === "school" ?
                         <div className='content'>
-                            <span className="text">
-                                {element.infos}.
-                            </span>
-                            <span className='icon'>
-                                {iconType.icon}
-                            </span>
+                            <p>{element.infos}</p>
+                            {iconSpan(iconType.icon)}
                         </div>
                         :
-                        <div className="date">
-                            {element.year} &emsp;
-                        </div>
+                        dateSpan(element.year)
                     }
-                </div>
-                <div className="timeLine">
-                    
                 </div>
                 <div className="contentRight">
                     {iconType.name === "degree" ?
                         <div className='content'>
-                            <span className='icon'>
-                                {iconType.icon}
-                            </span>
-                            <span className="text">
-                                {element.infos}.
-                            </span>
+                            {iconSpan(iconType.icon)}
+                            <p>{element.infos}</p>
                         </div>
                         :
-                        <div className="date">
-                            {element.year} &emsp;
-                        </div>
+                        dateSpan(element.year)
                     }
                 </div>
             </div>

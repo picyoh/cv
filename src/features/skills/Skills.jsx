@@ -26,7 +26,6 @@ function Skills() {
     const listItems = (items) => {
         return (
             items.map((item, index) => {
-                console.log(item.name)
                 return (
                     <div className="skill" key={index}>
                         <span className='skillIcon'>
