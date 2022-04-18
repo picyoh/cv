@@ -1,13 +1,93 @@
+/* TODO; calc line position */
+.timeLine {
+  position: relative;
+}
+.timeLine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 0.1rem;
+  background-color: white;
+}
+
 .timeLineContainer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  gap: 3%;
+  padding-bottom: 1rem;
+}
+
+.contentLeft {
+  position: relative;
+  flex: 40%;
+  text-align: end;
+}
+
+.contentLeft .content::before {
+  content: "";
+  position: absolute;
+  left: 101.5%;
+  z-index: 1;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.contentLeft .content::after {
+  content: "";
+  position: absolute;
+  left: 96%;
+  z-index: 1;
+  width: 1.5rem;
+  height: 0.1rem;
+  background-color: white;
+}
+
+.contentRight {
+  position: relative;
+  flex: 40%;
+  text-align: start;
+}
+
+.contentRight .content {
+  border-radius: 0 1rem 0 1rem;
+}
+
+.contentRight .content::before {
+  content: "";
+  position: absolute;
+  right: 101%;
+  z-index: 1;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.contentRight .content::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: 96%;
+  width: 1.4rem;
+  height: 0.1rem;
+  background-color: white;
 }
 
 .date {
-  flex: 50%;
+  flex: 40%;
   padding: 0 1rem;
+}
+
+.content {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
 }
 
 .icon {
@@ -22,22 +102,6 @@
   align-items: center;
 }
 
-.content {
-  background-color: var(--primary-color);
-  display: flex;
-  align-items: center;
-}
-
 .content p {
-  flex: 20%;
-}
-
-.contentLeft {
-  flex: 50%;
-  text-align: end;
-}
-
-.contentRight {
-  flex: 50%;
-  text-align: left;
+  text-align: start;
 }

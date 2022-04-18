@@ -1,0 +1,11 @@
+.education {
+    margin: 0 10%;
+}
+
+.education h3{
+    width: 50%;
+    margin: 0;
+    padding: 1rem;
+    border: 0.5rem solid var(--primary-color);
+    border-left: none;
+}

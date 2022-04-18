@@ -2,6 +2,8 @@ import React from 'react'
 import { educationDatas } from '../../datas/educationDatas'
 import TimeLine from '../../components/timeLine/TimeLine'
 
+import './education.css'
+
 function Education() {
     return (
         <div className="education">
