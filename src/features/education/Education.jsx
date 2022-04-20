@@ -7,7 +7,12 @@ import './education.css'
 function Education() {
     return (
         <div className="education">
-            <h3>Education</h3>
+            <div className="titleContainer">
+                <div className="titleLeft">
+                    <h3>Education</h3>
+                </div>
+                <span className='threadRight'></span>
+            </div>
             <TimeLine datas={educationDatas} />
         </div>
     )

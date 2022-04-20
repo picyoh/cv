@@ -40,7 +40,12 @@ function Skills() {
 
     return (
         <section className='skills'>
-            <h3>Skills</h3>
+            <div className="titleContainer">
+                <span className='threadLeft'></span>
+                <div className="titleRight">
+                    <h3>Skills</h3>
+                </div>
+            </div>
             <div className='skillList'>
                 {listItems(stack)}
             </div>

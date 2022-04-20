@@ -1,9 +1,5 @@
 .skills {
     margin: 0 10%;
-    border: 0.5rem solid var(--primary-color);
-    border-top-left-radius: 1rem;
-    border-right: none;
-    border-bottom: none;
 }
 
 .skillList{

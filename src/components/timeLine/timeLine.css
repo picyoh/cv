@@ -2,55 +2,50 @@
 .timeLine {
   position: relative;
 }
+
 .timeLine::after {
   content: "";
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 49.5%;
   height: 100%;
-  width: 0.1rem;
-  background-color: white;
+  width: 0.5rem;
+  background-color: var(--primary-color);
 }
 
 .timeLineContainer {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
   gap: 3%;
   padding-bottom: 1rem;
 }
 
 .contentLeft {
   position: relative;
-  flex: 40%;
+  flex: 48%;
   text-align: end;
 }
 
-.contentLeft .content::before {
-  content: "";
-  position: absolute;
-  left: 101.5%;
-  z-index: 1;
-  width: 1rem;
-  height: 1rem;
-  border: 1px solid white;
-  border-radius: 50%;
+.contentLeft .content {
+  border-radius: 1rem 0 1rem 0;
 }
 
-.contentLeft .content::after {
+.contentLeft::before {
   content: "";
   position: absolute;
-  left: 96%;
   z-index: 1;
-  width: 1.5rem;
-  height: 0.1rem;
-  background-color: white;
+  top:0;
+  left: 100.75%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--back-color);
+  filter : drop-shadow(0 0.3rem var(--back-color));
+  border: 0.3rem solid var(--primary-color);
+  border-radius: 50%;
 }
 
 .contentRight {
   position: relative;
-  flex: 40%;
+  flex: 48%;
   text-align: start;
 }
 
@@ -58,36 +53,16 @@
   border-radius: 0 1rem 0 1rem;
 }
 
-.contentRight .content::before {
-  content: "";
-  position: absolute;
-  right: 101%;
-  z-index: 1;
-  width: 1rem;
-  height: 1rem;
-  border: 1px solid white;
-  border-radius: 50%;
-}
-
-.contentRight .content::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  right: 96%;
-  width: 1.4rem;
-  height: 0.1rem;
-  background-color: white;
-}
-
 .date {
-  flex: 40%;
   padding: 0 1rem;
+  height: 100%;
 }
 
 .content {
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
+  margin: 0.5rem;
 }
 
 .icon {
