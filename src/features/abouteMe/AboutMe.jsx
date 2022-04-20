@@ -4,7 +4,7 @@ import "./aboutMe.css"
 
 function AboutMe() {
     return (
-        <div className='aboutMe'>
+        <section className='aboutMe'>
             <div className="photo">
                 <img src="illuoimnow.jpg" alt="Yohann Picot" />
             </div>
@@ -20,7 +20,7 @@ function AboutMe() {
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

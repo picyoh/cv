@@ -2,6 +2,8 @@ import React from 'react'
 
 import Card from '../../components/cards/Card'
 
+import './portfolio.css'
+
 function Portfolio() {
 
     const portfolioDatas = [
@@ -13,15 +15,16 @@ function Portfolio() {
         {name:"Kasa", src:"firefox.png", link:"https://picyoh.github.io/YohannPicot_11_08112021/"}
     ]
 
-    const image = portfolioDatas.map((element, index) => {
+    const cards = portfolioDatas.map((element, index) => {
         return (
             <Card name={element.name} src={element.src} index={index} key={index} />
         )
     })
     return (
-        <div className='portfolio'>
-                {image}
-        </div>
+        <section className='portfolio'>
+            <h3>Portfolio</h3>
+                {cards}
+        </section>
     )
 }
 

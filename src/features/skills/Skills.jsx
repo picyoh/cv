@@ -39,7 +39,7 @@ function Skills() {
     }
 
     return (
-        <div className='skills'>
+        <section className='skills'>
             <h3>Skills</h3>
             <div className='skillList'>
                 {listItems(stack)}
@@ -47,7 +47,7 @@ function Skills() {
             <div className="skillList">
                 {listItems(softwares)}
             </div>
-        </div>
+        </section>
     )
 }
 
