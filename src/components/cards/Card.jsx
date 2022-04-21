@@ -9,7 +9,7 @@ function Card(props) {
     return (
         index === 0 ?
             <div className="card">
-                <div className="cardTitle">
+                <div className="cardTitleLeft">
                     <h4>{name}</h4>
                 </div>
                 <div className="cardFirstContent">
@@ -26,13 +26,13 @@ function Card(props) {
                             <img alt={name} src={src} />
                         </div>
                     </div>
-                    <div className="cardTitle">
+                    <div className="cardTitleRight">
                         <h4>{name}</h4>
                     </div>
                 </div>
                 :
                 <div className="card">
-                    <div className="cardTitle">
+                    <div className="cardTitleLeft">
                         <h4>{name}</h4>
                     </div>
                     <div className="cardContentRight">

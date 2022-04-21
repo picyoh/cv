@@ -31,6 +31,7 @@ function TimeLine(props) {
             </div >
         )
     }
+    
     // TODO refactor component
 
     const list = datas.map((element, index) => {

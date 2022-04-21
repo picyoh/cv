@@ -4,7 +4,7 @@ import Skills from "./features/skills/Skills";
 import Education from "./features/education/Education";
 import Contact from "./features/contact/Contact";
 
-import './App.css'
+import './app.css'
 
 function App() {
   return (
