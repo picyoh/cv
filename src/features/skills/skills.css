@@ -1,23 +1,68 @@
 .skills {
-    margin: 0 10%;
+  margin: 0 10%;
 }
 
-.skillList{
-    flex: 30%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    position: relative;
+.skillTitleContainer {
+  display: flex;
+}
+
+.skillTitle {
+  position: relative;
+  flex: 75%;
+  border: 0.5rem solid var(--primary-color);
+  border-top-left-radius: 1rem;
+  border-right: none;
+  border-bottom: none;
+  padding-left: 2%;
+}
+
+.skillTitle::before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  width: 35.7%;
+  height: 0.5rem;
+  background-color: var(--back-color);
+}
+
+.skillTitle::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 99.25%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--back-color);
+  filter: drop-shadow(0 0.3rem var(--back-color));
+  border: 0.3rem solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.skillTitle h3 {
+  text-align: start;
+}
+
+.emptySpace {
+  flex: 10%;
+}
+
+.skillList {
+  flex: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
 }
 
 .skill {
-    flex: 25%;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
+  flex: 25%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .skillIcon {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }

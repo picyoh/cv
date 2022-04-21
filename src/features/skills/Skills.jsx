@@ -40,9 +40,9 @@ function Skills() {
 
     return (
         <section className='skills'>
-            <div className="titleContainer">
-                <span className='threadLeft'></span>
-                <div className="titleRight">
+            <div className="skillTitleContainer">
+                <span className='emptySpace'></span>
+                <div className="skillTitle">
                     <h3>Skills</h3>
                 </div>
             </div>

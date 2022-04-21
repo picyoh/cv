@@ -1,14 +1,119 @@
 .card {
   display: flex;
+}
 
+.cardTitle {
+  flex: 10%;
+  margin-top: 2%;
+}
+
+/* TODO: first child */
+.cardFirstContent {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 50%;
+  border: 0.5rem solid var(--primary-color);
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+}
+
+.cardFirstContent::after {
+  content:'';
+  position: absolute;
+  top: 10%;
+  right: 99%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--back-color);
+  filter: drop-shadow(0 0.3rem var(--back-color));
+  border: 0.3rem solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.cardContentLeft {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 50%;
+  border: 0.5rem solid var(--primary-color);
+  border-top-right-radius: 1rem;
+  border-left: none;
+  border-bottom: none;
+}
+
+.cardContentLeft::before {
+  content:'';
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  width: 42.3%;
+  height: 0.5rem;
+  background-color: var(--back-color);
+
+}
+
+.cardContentLeft::after {
+  content:'';
+  position: absolute;
+  top: 10%;
+  left: 99%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--back-color);
+  filter: drop-shadow(0 0.3rem var(--back-color));
+  border: 0.3rem solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.cardContentRight {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 50%;
+  border: 0.5rem solid var(--primary-color);
+  border-top-left-radius: 1rem;
+  border-right: none;
+  border-bottom: none;
+}
+
+.cardContentRight::before {
+  content:'';
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  width: 42.3%;
+  height: 0.5rem;
+  background-color: var(--back-color);
+
+}
+
+.cardContentRight::after {
+  content:'';
+  position: absolute;
+  top: 10%;
+  right: 99%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--back-color);
+  filter: drop-shadow(0 0.3rem var(--back-color));
+  border: 0.3rem solid var(--primary-color);
+  border-radius: 50%;
 }
 
 .imgContainer {
-    object-fit: contain;
-    width: 100%;
-    height: max-content;
+  width: 90%;
+  object-fit: contain;
+  padding: 7% 0 5% 0;
+  
 }
 
 .imgContainer img {
-    width: 100%;
+  width: 100%;
+  border-radius: 0 1rem;
 }
+
+.cardContentLeft img {
+  border-radius: 1rem 0;
+  }

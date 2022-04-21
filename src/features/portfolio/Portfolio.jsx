@@ -20,15 +20,16 @@ function Portfolio() {
             <Card name={element.name} src={element.src} index={index} key={index} />
         )
     })
+    
     return (
         <section className='portfolio'>
             <div className="titleContainer">
-                <div className="titleLeft">
+                <div className="introTitleLeft">
                     <h3>Portfolio</h3>
                 </div>
                 <span className='threadRight'></span>
             </div>
-            {cards}
+            { cards }
         </section>
     )
 }

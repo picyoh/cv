@@ -11,7 +11,7 @@ function Education() {
                 <div className="titleLeft">
                     <h3>Education</h3>
                 </div>
-                <span className='threadRight'></span>
+                <span className='educationThread'></span>
             </div>
             <TimeLine datas={educationDatas} />
         </div>

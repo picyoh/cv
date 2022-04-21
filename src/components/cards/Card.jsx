@@ -5,23 +5,42 @@ import "./card.css"
 function Card(props) {
 
     const { name, src, index } = props;
-    
+
     return (
-        index % 2 === 0
-            ?
+        index === 0 ?
             <div className="card">
-                <div className="imgContainer">
-                    <img alt={name} src={src} />
+                <div className="cardTitle">
+                    <h4>{name}</h4>
                 </div>
-                <h4>{name}</h4>
+                <div className="cardFirstContent">
+                    <div className="imgContainer">
+                        <img alt={name} src={src} />
+                    </div>
+                </div>
             </div>
             :
-            <div className="card">
-                <h4>{name}</h4>
-                <div className="imgContainer">
-                    <img alt={name} src={src} />
+            index % 2 === 1 ?
+                <div className="card">
+                    <div className="cardContentLeft">
+                        <div className="imgContainer">
+                            <img alt={name} src={src} />
+                        </div>
+                    </div>
+                    <div className="cardTitle">
+                        <h4>{name}</h4>
+                    </div>
                 </div>
-            </div>
+                :
+                <div className="card">
+                    <div className="cardTitle">
+                        <h4>{name}</h4>
+                    </div>
+                    <div className="cardContentRight">
+                        <div className="imgContainer">
+                            <img alt={name} src={src} />
+                        </div>
+                    </div>
+                </div>
     )
 }
 
