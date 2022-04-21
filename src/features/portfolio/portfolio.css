@@ -5,3 +5,9 @@
 .introTitleLeft {
     flex: 10%;
 }
+
+.introTitleLeft h3 {
+    margin: 0;
+    text-align: end;
+    padding: 3rem 1.5rem 3rem 0;
+}

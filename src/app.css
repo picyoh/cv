@@ -2,8 +2,7 @@
   padding: 3rem;
 }
 /* TODO: responsive */
-h3,
-h4 {
+p {
   flex: 100%;
   text-align: center;
 }
@@ -26,7 +25,7 @@ h4 {
 .threadLeft {
   position: relative;
   flex: 50%;
-  border: 0.5rem solid var(--primary-color);
+  border: 0.3rem solid var(--primary-color);
   border-top-right-radius: 1rem;
   border-left: none;
   border-bottom: none;
@@ -46,20 +45,22 @@ h4 {
 }
 
 .titleLeft {
+  position: relative;
   flex: 50%;
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
 
 .titleLeft h3 {
-  margin: 1rem;
+  margin: 0 1.5rem;
   text-align: end;
 }
 
-.titleLeft h3::after {
+.titleLeft::after {
   content: "";
   position: absolute;
-  top: 30%;
-  right: 98.75%;
+  z-index: 1;
+  top: 40%;
+  right: -0.8rem;
   width: 0.5rem;
   height: 0.5rem;
   background-color: var(--back-color);
@@ -67,10 +68,11 @@ h4 {
   border: 0.3rem solid var(--primary-color);
   border-radius: 50%;
 }
+
 .threadRight {
   position: relative;
   flex: 50%;
-  border: 0.5rem solid var(--primary-color);
+  border: 0.3rem solid var(--primary-color);
   border-top-left-radius: 1rem;
   border-right: none;
   border-bottom: none;
@@ -79,13 +81,13 @@ h4 {
 .threadRight::before {
   content: "";
   position: absolute;
-  top: -1.5rem;
+  top: -1.35rem;
   right: 0;
   width: 1rem;
   height: 1rem;
   background-color: var(--back-color);
-  filter: drop-shadow(0.3rem 0.4rem var(--back-color));
-  border: 0.5rem solid var(--primary-color);
+  filter: drop-shadow(0.5rem 0.5rem var(--back-color));
+  border: 0.3rem solid var(--primary-color);
   border-bottom-right-radius: 1rem;
   border-top: none;
   border-left: none;
@@ -94,7 +96,7 @@ h4 {
 .threadRight::after {
   content: "";
   position: absolute;
-  top: 30%;
+  top: 40%;
   right: 99%;
   width: 0.5rem;
   height: 0.5rem;

@@ -9,7 +9,7 @@
   top: 0;
   left: 49.5%;
   height: 100%;
-  width: 0.5rem;
+  width: 0.25rem;
   background-color: var(--primary-color);
 }
 
@@ -34,7 +34,7 @@
   position: absolute;
   z-index: 1;
   top:0;
-  left: 100.75%;
+  left: 100%;
   width: 0.5rem;
   height: 0.5rem;
   background-color: var(--back-color);
