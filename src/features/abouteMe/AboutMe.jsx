@@ -1,6 +1,6 @@
 import React from 'react'
 
-import logo  from "../../datas/assets/illuoimnow.jpg"
+import logo  from "../../assets/illuoimnow.jpg"
 import "./aboutMe.css"
 
 function AboutMe() {

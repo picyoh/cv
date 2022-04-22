@@ -5,3 +5,5 @@ export const educationDatas = [
     {year: 2013, infos: "Ecole Nationale Superieur d'Art de Limoges", type:"school"},
     {year: 2022, infos: "Diplome de developpeur d'Application React", type:"degree"},
 ]
+
+// TODO: ajouter les textes entier

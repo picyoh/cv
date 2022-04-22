@@ -2,19 +2,20 @@ import React from 'react'
 
 import { IconContext } from 'react-icons'
 import { FaJs, FaNodeJs, FaReact } from "react-icons/fa"
-import { SiRedux, SiVisualstudiocode, SiSass, SiAdobecreativecloud } from "react-icons/si"
+import { SiRedux, SiAdobecreativecloud } from "react-icons/si"
 
-import Html from "../../datas/assets/icons/html.png"
-import Vsc from '../../datas/assets/icons/vsc.png'
-import Figma from "../../datas/assets/icons/figma.png"
+import Html from "../../assets/icons/html.png"
+import Sass from "../../assets/icons/sass.png"
+import Vsc from '../../assets/icons/vsc.png'
+import Figma from "../../assets/icons/figma.png"
 
 import './skills.css'
 
 function Skills() {
-    // TODO: colors
+    // TODO: size icons to 48px
     const stack = [
-        { name: "Html5 & Css3", src: Html },
-        { name: "Sass", color: "#f06292", icon: <SiSass /> },
+        { name: "Html5", src: Html },
+        { name: "Sass", src: Sass },
         { name: "JavaScript", color: "#ffd600", icon: <FaJs /> },
         { name: "React", color: "#61dafb", icon: <FaReact /> },
         { name: "Redux", color: "#7855bc", icon: <SiRedux /> },
@@ -30,7 +31,6 @@ function Skills() {
     const listItems = (items) => {
         return (
             items.map((item, index) => {
-                console.log(item.src)
                 return (
                     <div className="skill" key={index}>
                         <span className='skillIcon'>

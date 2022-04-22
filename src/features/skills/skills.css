@@ -82,6 +82,10 @@
   justify-content: center;
 }
 
+.skillIcon img {
+  width:36px;
+}
+
 .skillName {
   text-align: center;
 }

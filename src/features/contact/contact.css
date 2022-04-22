@@ -10,8 +10,3 @@
     padding: 0.5rem;
     background-color: var(--primary-color);
 }
-
-svg {
-    color: var(--secondary-color);
-    font-size: 2rem;
-}
