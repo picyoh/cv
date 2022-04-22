@@ -66,7 +66,11 @@ function Skills() {
             <div className="skillList">
                 {listItems(softwares)}
             </div>
+            <div className="transition">
+                <div></div>
+            </div>
         </section>
+
     )
 }
 

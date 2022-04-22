@@ -2,10 +2,6 @@
   margin: 0 10%;
 }
 
-.portfolio .titleContainer .title::after {
-  right: 0;
-}
-
 .portfolio .titleContainer .title::before {
   content: none;
 }

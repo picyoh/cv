@@ -2,10 +2,15 @@
     margin: 0 10%;
 }
 
-.education .titleContainer .title {
-    flex: 24%;
+.education .titleContainer::after {
+    right: 16%
 }
 
-.education .titleContainer .title::after {
-    right: 32.8%;
+.education .titleContainer .emptySpace {
+    flex: 57%;
 }
+
+.education .titleContainer .title {
+    flex: 50%;
+}
+
