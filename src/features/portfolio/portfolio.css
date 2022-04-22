@@ -1,13 +1,11 @@
 .portfolio {
- margin: 0 10%;   
+  margin: 0 10%;
 }
 
-.introTitleLeft {
-    flex: 10%;
+.portfolio .titleContainer .title::after {
+  right: 0;
 }
 
-.introTitleLeft h3 {
-    margin: 0;
-    text-align: end;
-    padding: 3rem 1.5rem 3rem 0;
+.portfolio .titleContainer .title::before {
+  content: none;
 }

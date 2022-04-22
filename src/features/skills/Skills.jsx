@@ -12,7 +12,6 @@ import Figma from "../../assets/icons/figma.png"
 import './skills.css'
 
 function Skills() {
-    // TODO: size icons to 48px
     const stack = [
         { name: "Html5", src: Html },
         { name: "Sass", src: Sass },
@@ -55,9 +54,9 @@ function Skills() {
 
     return (
         <section className='skills'>
-            <div className="skillTitleContainer">
+            <div className="titleContainer">
                 <span className='emptySpace'></span>
-                <div className="skillTitle">
+                <div className="title">
                     <h3>Skills</h3>
                 </div>
             </div>

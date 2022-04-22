@@ -27,10 +27,10 @@ function Portfolio() {
     return (
         <section className='portfolio'>
             <div className="titleContainer">
-                <div className="introTitleLeft">
+                <span className='emptySpace'></span>
+                <div className="title">
                     <h3>Portfolio</h3>
                 </div>
-                <span className='threadRight'></span>
             </div>
             { cards }
         </section>

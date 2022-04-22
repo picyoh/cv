@@ -9,10 +9,10 @@ function Education() {
     return (
         <div className="education">
             <div className="titleContainer">
-                <div className="titleLeft">
+                <span className='emptySpace'></span>
+                <div className="title">
                     <h3>Education</h3>
                 </div>
-                <span className='educationThread'></span>
             </div>
             <TimeLine datas={educationDatas} />
         </div>
