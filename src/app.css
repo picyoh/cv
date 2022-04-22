@@ -1,10 +1,22 @@
 .app {
   padding: 3rem;
 }
-/* TODO: responsive */
+/* TODO: responsive & add dash & typo & colors */
 p {
   flex: 100%;
-  text-align: center;
+  text-align: start;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 .titleContainer {
@@ -60,7 +72,7 @@ p {
   position: absolute;
   z-index: 1;
   top: 40%;
-  right: -0.8rem;
+  right: -0.7rem;
   width: 0.5rem;
   height: 0.5rem;
   background-color: var(--back-color);

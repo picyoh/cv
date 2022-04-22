@@ -1,12 +1,13 @@
 import React from 'react'
 
+import logo  from "../../datas/assets/illuoimnow.jpg"
 import "./aboutMe.css"
 
 function AboutMe() {
     return (
         <section className='aboutMe'>
             <div className="photo">
-                <img src="illuoimnow.jpg" alt="Yohann Picot" />
+                <img src={logo} alt="Yohann Picot" />
             </div>
             <div className="intro">
                 <div className="id">
