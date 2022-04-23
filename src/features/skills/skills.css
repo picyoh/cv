@@ -62,25 +62,21 @@
   position: absolute;
   right: 16%;
   height: 100%;
-  width: 0.25rem;
+  width: 0.28rem;
   background-image: linear-gradient(
     var(--primary-color) 0,
-    var(--primary-color) 12%,
-    transparent 12%,
-    transparent 24%,
-    var(--primary-color) 24%,
-    var(--primary-color) 36%,
-    transparent 36%,
-    transparent 48%,
-    var(--primary-color) 48%,
-    var(--primary-color) 60%,
+    var(--primary-color) 10%,
+    transparent 10%,
+    transparent 20%,
+    var(--primary-color) 20%,
+    var(--primary-color) 30%,
+    transparent 30%,
+    transparent 40%,
+    var(--primary-color) 40%,
+    var(--primary-color) 50%,
+    transparent 50%,
     transparent 60%,
-    transparent 72%,
-    var(--primary-color) 72%,
-    var(--primary-color) 84%,
-    transparent 84%,
-    transparent 96%,
-    var(--primary-color) 96%,
+    var(--primary-color) 60%,
     var(--primary-color) 100%
   );
   background-clip: border-box;

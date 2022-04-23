@@ -27,7 +27,7 @@ function TimeLine(props) {
     const dateSpan = (year) => {
         return (
             <div className="date">
-                {year}
+                <p>{year}</p>
             </div >
         )
     }

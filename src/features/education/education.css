@@ -14,3 +14,6 @@
     flex: 50%;
 }
 
+.education .title h3::after {
+    right: 98%;
+  }

@@ -1,7 +1,7 @@
 .app {
   padding: 3rem;
 }
-/* TODO: responsive & add dash & typo & colors */
+/* TODO: responsive & typo & colors */
 p {
   flex: 100%;
   text-align: start;
@@ -9,6 +9,8 @@ p {
 
 h1 {
   font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
 }
 
 h2 {
@@ -17,6 +19,8 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
 }
 
 svg {
