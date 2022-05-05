@@ -1,7 +1,7 @@
 import React from 'react'
 
 import logo  from "../../assets/illuoimnow.jpg"
-import "./aboutMe.css"
+import "./aboutme.css"
 
 function AboutMe() {
     return (

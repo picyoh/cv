@@ -1,6 +1,6 @@
 import React from 'react'
 import { educationDatas } from '../../datas/educationDatas'
-import TimeLine from '../../components/timeLine/TimeLine'
+import TimeLine from '../../components/timeline/Timeline'
 
 import './education.css'
 

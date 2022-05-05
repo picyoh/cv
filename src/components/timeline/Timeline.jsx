@@ -4,7 +4,7 @@ import { GrCertificate } from "react-icons/gr"
 import { FaGraduationCap } from "react-icons/fa"
 import { ImBooks } from "react-icons/im"
 
-import "./timeLine.css"
+import "./timeline.css"
 
 function TimeLine(props) {
 
@@ -39,7 +39,7 @@ function TimeLine(props) {
         const iconType = iconTypes.filter(iconType => iconType.name === element.type)[0];
 
         return (
-            <div className="timeLineContainer" key={index}>
+            <div className="timelineContainer" key={index}>
                 <div className="contentLeft">
                     {iconType.name === "school" ?
                         <div className='content'>
@@ -65,7 +65,7 @@ function TimeLine(props) {
     });
 
     return (
-        <div className='timeLine'>
+        <div className='timeline'>
             {list}
         </div>
     )

@@ -1,4 +1,4 @@
-import AboutMe from "./sections/abouteMe/AboutMe";
+import AboutMe from "./sections/aboutme/Aboutme";
 import Portfolio from "./sections/portfolio/Portfolio";
 import Skills from "./sections/skills/Skills";
 import Education from "./sections/education/Education";

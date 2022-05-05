@@ -1,9 +1,9 @@
 /* TODO; calc line position */
-.timeLine {
+.timeline {
   position: relative;
 }
 
-.timeLine::after {
+.timeline::after {
   content: "";
   position: absolute;
   top: 0;
@@ -13,7 +13,7 @@
   background-color: var(--primary-color);
 }
 
-.timeLineContainer {
+.timelineContainer {
   display: flex;
   gap: 3%;
   padding-bottom: 1rem;
