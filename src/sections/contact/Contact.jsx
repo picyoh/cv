@@ -8,7 +8,7 @@ import "./contact.css"
 
 function Contact() {
     return (
-        <section className="contact">
+        <aside className="contact">
             <Link
                 to="#"
                 onClick={(e) => {
@@ -28,7 +28,7 @@ function Contact() {
                     <FaLinkedinIn />
                 </div>
             </Link>
-        </section>
+        </aside>
     )
 }
 
