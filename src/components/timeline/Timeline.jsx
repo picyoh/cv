@@ -31,16 +31,14 @@ function TimeLine(props) {
             </div >
         )
     }
-    
-    // TODO refactor component
 
     const list = datas.map((element, index) => {
 
         const iconType = iconTypes.filter(iconType => iconType.name === element.type)[0];
 
         return (
-            <div className="timelineContainer" key={index}>
-                <div className="contentLeft">
+            <div className="timeline__content" key={index}>
+                <div className="timeline__content__left">
                     {iconType.name === "school" ?
                         <div className='content'>
                             <p>{element.infos}</p>
@@ -50,7 +48,7 @@ function TimeLine(props) {
                         dateSpan(element.year)
                     }
                 </div>
-                <div className="contentRight">
+                <div className="timelien__content__right">
                     {iconType.name === "degree" ?
                         <div className='content'>
                             {iconSpan(iconType.icon)}
