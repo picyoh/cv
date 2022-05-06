@@ -20,16 +20,18 @@ p {
   margin: 0;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
 h1 {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: $primary-color;
-  margin: 0;
 }
 
 h2 {
   font-size: 1rem;
-  margin: 0;
 }
 
 h3 {
@@ -38,11 +40,23 @@ h3 {
   color: $primary-color;
 }
 
+h3::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 97.4%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: $back-color;
+  filter: drop-shadow(0 0.3rem $back-color);
+  border: 0.3rem solid $primary-color;
+  border-radius: 50%;
+}
+
 svg {
   color: $secondary-color;
   font-size: 2rem;
 }
-
 
 // TODO: move title to another file ?
 .titleContainer {
@@ -66,76 +80,51 @@ svg {
   border-left: none;
 }
 
+// TODO: remove emptySpace ??
 .emptySpace {
   flex: 30%;
 }
 
 .title {
   position: relative;
+  width: 75%;
   z-index: -1;
-  flex: 63.5%;
-  padding: 2rem 1.5rem;
-  border: 0.3rem solid $primary-color;
+  padding: 2rem 1rem;
+  border: none;
   border-left: 0.3rem solid transparent;
   border-top-left-radius: 1rem;
   border-right: none;
   border-bottom: none;
   background-image: linear-gradient(
-    $primary-color 65%,
-    transparent 65%,
-    transparent 70%,
-    $primary-color 70%,
-    $primary-color 75%,
-    transparent 75%,
-    transparent 80%,
-    $primary-color 80%,
-    $primary-color 85%,
-    transparent 85%,
+    $primary-color 0,
+    $primary-color 60%,
+    transparent 60%,
+    transparent 66%,
+    $primary-color 66%,
+    $primary-color 72%,
+    transparent 72%,
+    transparent 78%,
+    $primary-color 78%,
+    $primary-color 84%,
+    transparent 84%,
     transparent 90%,
     $primary-color 90%,
-    $primary-color 95%,
-    transparent 95%,
-    transparent 100%
+    $primary-color 96%,
+    transparent 96%,
+    transparent 100%,
   );
   background-clip: border-box;
-}
 
-.title::before {
-  content: "";
-  position: absolute;
-  top: -0.5rem;
-  right: 0;
-  width: 36%;
-  height: 0.5rem;
-  background-color: $back-color;
-}
-
-.title::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: -0.05rem;
-  left: 0;
-  width: 101%;
-  height: 101%;
-  border-top-left-radius: 0.8rem;
-  background-color: $back-color;
-  background-clip: padding-box;
-}
-
-.title h3 {
-  text-align: start;
-}
-
-.title h3::after {
-  content: "";
-  position: absolute;
-  top: 40%;
-  right: 98.9%;
-  width: 0.5rem;
-  height: 0.5rem;
-  background-color: $back-color;
-  filter: drop-shadow(0 0.3rem $back-color);
-  border: 0.3rem solid $primary-color;
-  border-radius: 50%;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0.3rem;
+    left: -0.05rem;
+    width: 101%;
+    height: 100%;
+    border-top-left-radius: 0.8rem;
+    background-color: $back-color;
+    background-clip: padding-box;
+  }
 }

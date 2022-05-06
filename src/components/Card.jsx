@@ -7,7 +7,7 @@ function Card(props) {
     return (
         index === 0 ?
             <div className="card">
-                <div className="card__title__left">
+                <div className="card__title__first">
                     <h4>{name}</h4>
                 </div>
                 <div className="card__first">
