@@ -26,7 +26,7 @@ function Portfolio() {
     
     return (
         <section className='portfolio'>
-            <div className="titleContainer">
+            <div className="portfolio__container">
                 <span className='emptySpace'></span>
                 <div className="title">
                     <h3>Portfolio</h3>

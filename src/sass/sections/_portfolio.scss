@@ -1,0 +1,11 @@
+.portfolio {
+  margin: 0 10%;
+
+  &__container {
+    .title {
+      &::before {
+        content: none;
+      }
+    }
+  }
+}
