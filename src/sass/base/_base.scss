@@ -1,4 +1,5 @@
 body {
+  width: 100%;
   margin: 0;
   font-family: "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -9,26 +10,30 @@ body {
 }
 
 .app {
-  padding: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
 }
 /* TODO: responsive & typo & colors */
 p {
-  flex: 100%;
-  text-align: start;
+  font-size: 0.8em;
+  margin: 0;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: $primary-color;
+  margin: 0;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1rem;
+  margin: 0;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
   color: $primary-color;
 }
@@ -38,6 +43,8 @@ svg {
   font-size: 2rem;
 }
 
+
+// TODO: move title to another file ?
 .titleContainer {
   display: flex;
   position: relative;

@@ -1,0 +1,653 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+.app {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+/* TODO: responsive & typo & colors */
+p {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #457b9d;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #457b9d;
+}
+
+svg {
+  color: #e63946;
+  font-size: 2rem;
+}
+
+.titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.titleContainer::after {
+  content: "";
+  position: absolute;
+  top: -1.05rem;
+  right: 0%;
+  width: 1rem;
+  height: 1rem;
+  background-color: #1d3557;
+  -webkit-filter: drop-shadow(0.5rem 0.5rem #1d3557);
+          filter: drop-shadow(0.5rem 0.5rem #1d3557);
+  border: 0.3rem solid #457b9d;
+  border-left: 0.3rem solid transparent;
+  border-bottom-right-radius: 1rem;
+  border-top: none;
+  border-left: none;
+}
+
+.emptySpace {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+}
+
+.title {
+  position: relative;
+  z-index: -1;
+  -webkit-box-flex: 63.5%;
+      -ms-flex: 63.5%;
+          flex: 63.5%;
+  padding: 2rem 1.5rem;
+  border: 0.3rem solid #457b9d;
+  border-left: 0.3rem solid transparent;
+  border-top-left-radius: 1rem;
+  border-right: none;
+  border-bottom: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #457b9d), color-stop(65%, transparent), color-stop(70%, transparent), color-stop(70%, #457b9d), color-stop(75%, #457b9d), color-stop(75%, transparent), color-stop(80%, transparent), color-stop(80%, #457b9d), color-stop(85%, #457b9d), color-stop(85%, transparent), color-stop(90%, transparent), color-stop(90%, #457b9d), color-stop(95%, #457b9d), color-stop(95%, transparent), to(transparent));
+  background-image: linear-gradient(#457b9d 65%, transparent 65%, transparent 70%, #457b9d 70%, #457b9d 75%, transparent 75%, transparent 80%, #457b9d 80%, #457b9d 85%, transparent 85%, transparent 90%, #457b9d 90%, #457b9d 95%, transparent 95%, transparent 100%);
+  background-clip: border-box;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  width: 36%;
+  height: 0.5rem;
+  background-color: #1d3557;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -0.05rem;
+  left: 0;
+  width: 101%;
+  height: 101%;
+  border-top-left-radius: 0.8rem;
+  background-color: #1d3557;
+  background-clip: padding-box;
+}
+
+.title h3 {
+  text-align: start;
+}
+
+.title h3::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 98.9%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #1d3557;
+  -webkit-filter: drop-shadow(0 0.3rem #1d3557);
+          filter: drop-shadow(0 0.3rem #1d3557);
+  border: 0.3rem solid #457b9d;
+  border-radius: 50%;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  border: 0.3rem solid #457b9d;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+}
+
+.card__title__left {
+  position: relative;
+  -webkit-box-flex: 10%;
+      -ms-flex: 10%;
+          flex: 10%;
+}
+
+.card__title__left::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 5%;
+  left: 97%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #1d3557;
+  -webkit-filter: drop-shadow(0 0.3rem #1d3557);
+          filter: drop-shadow(0 0.3rem #1d3557);
+  border: 0.3rem solid #457b9d;
+  border-radius: 50%;
+}
+
+.card__title__left h4 {
+  text-align: end;
+}
+
+.card__title__right {
+  position: relative;
+  -webkit-box-flex: 10%;
+      -ms-flex: 10%;
+          flex: 10%;
+}
+
+.card__title__right::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 97%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #1d3557;
+  -webkit-filter: drop-shadow(0 0.3rem #1d3557);
+          filter: drop-shadow(0 0.3rem #1d3557);
+  border: 0.3rem solid #457b9d;
+  border-radius: 50%;
+}
+
+.card__content__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  border: 0.3rem solid #457b9d;
+  border-top-right-radius: 1rem;
+  border-left: none;
+  border-bottom: none;
+}
+
+.card__content__left::before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 0;
+  width: 42.6%;
+  height: 0.5rem;
+  background-color: #1d3557;
+}
+
+.card__content__left::after {
+  content: "";
+  position: absolute;
+  top: -1.35rem;
+  left: 42.6%;
+  width: 1rem;
+  height: 1rem;
+  background-color: #1d3557;
+  -webkit-filter: drop-shadow(-0.5rem 0.3rem 0 #1d3557);
+          filter: drop-shadow(-0.5rem 0.3rem 0 #1d3557);
+  border: 0.3rem solid #457b9d;
+  border-bottom-left-radius: 1rem;
+  border-top: none;
+  border-right: none;
+}
+
+.card__content__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  border: 0.3rem solid #457b9d;
+  border-top-left-radius: 1rem;
+  border-right: none;
+  border-bottom: none;
+}
+
+.card__content__right::before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  width: 42.6%;
+  height: 0.5rem;
+  background-color: #1d3557;
+}
+
+.card__content__right::after {
+  content: "";
+  position: absolute;
+  top: -1.35rem;
+  right: 42.6%;
+  width: 1rem;
+  height: 1rem;
+  background-color: #1d3557;
+  -webkit-filter: drop-shadow(0.5rem 0.3rem 0 #1d3557);
+          filter: drop-shadow(0.5rem 0.3rem 0 #1d3557);
+  border: 0.3rem solid #457b9d;
+  border-bottom-right-radius: 1rem;
+  border-top: none;
+  border-left: none;
+}
+
+.threadRight::before {
+  content: "";
+  position: absolute;
+  top: -1.35rem;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  background-color: #1d3557;
+  -webkit-filter: drop-shadow(0.3rem 0.4rem #1d3557);
+          filter: drop-shadow(0.3rem 0.4rem #1d3557);
+  border: 0.3rem solid #457b9d;
+  border-bottom-right-radius: 1rem;
+  border-top: none;
+  border-left: none;
+}
+
+.imgContainer {
+  width: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 7% 0 5% 0;
+}
+
+.imgContainer img {
+  width: 100%;
+  border-radius: 0 1rem;
+}
+
+.cardContentLeft img {
+  border-radius: 1rem 0;
+}
+
+/* TODO; calc line position */
+.timeline {
+  position: relative;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 49.5%;
+  height: 100%;
+  width: 0.25rem;
+  background-color: #457b9d;
+}
+
+.timeline__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3%;
+  padding-bottom: 1rem;
+}
+
+.timeline__content__left {
+  position: relative;
+  -webkit-box-flex: 48%;
+      -ms-flex: 48%;
+          flex: 48%;
+  text-align: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.timeline__content__left::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 100%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #1d3557;
+  -webkit-filter: drop-shadow(0 0.3rem #1d3557);
+          filter: drop-shadow(0 0.3rem #1d3557);
+  border: 0.3rem solid #457b9d;
+  border-radius: 50%;
+}
+
+.timeline__content__left .content {
+  border-radius: 1rem 0 1rem 0;
+}
+
+.timeline__content__left .date {
+  border-radius: 1rem 0 1rem 0;
+}
+
+.timeline__content__right {
+  position: relative;
+  -webkit-box-flex: 48%;
+      -ms-flex: 48%;
+          flex: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.timeline__content__right .content {
+  border-radius: 0 1rem 0 1rem;
+}
+
+.timeline__content__right .date {
+  border-radius: 0 1rem 0 1rem;
+}
+
+.date {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #457b9d;
+}
+
+.date p {
+  padding: 0 1.5rem;
+}
+
+.content {
+  background-color: #457b9d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  padding: 0.5rem;
+  border: 1px solid #f1faee;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content p {
+  text-align: start;
+}
+
+.aboutme__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.aboutme__top__picture {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  -webkit-filter: drop-shadow(0 0.3rem 0 #457b9d);
+          filter: drop-shadow(0 0.3rem 0 #457b9d);
+}
+
+.aboutme__top__picture img {
+  border-radius: 50% 50% 0 50%;
+  height: 10vh;
+}
+
+.aboutme__top__id {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.aboutme__top__id h2 {
+  padding-bottom: 0.3rem;
+}
+
+.aboutme__bottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background-color: #1d3557;
+  background-clip: padding-box;
+}
+
+.aboutme__bottom::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -0.25rem;
+  left: 0;
+  width: 101.5%;
+  height: 107%;
+  border-radius: 1rem;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(40%, transparent), color-stop(40%, #457b9d), to(#457b9d));
+  background-image: linear-gradient(to right, transparent 0, transparent 40%, #457b9d 40%, #457b9d 100%);
+  background-position: 0;
+  background-clip: border-box;
+}
+
+.contact {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 1.5%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: #457b9d;
+}
+
+.education__container::after {
+  right: 16%;
+}
+
+.education .emptySpace {
+  -webkit-box-flex: 57%;
+      -ms-flex: 57%;
+          flex: 57%;
+}
+
+.education .title {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.education .titleh3::after {
+  right: 98%;
+}
+
+.portfolio__container .title::before {
+  content: none;
+}
+
+.skills__container::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  right: 0;
+  width: 29%;
+  height: 2rem;
+  background-color: #1d3557;
+}
+
+.skills__container::after {
+  right: 29.7%;
+}
+
+.skills__container .emptySpace {
+  -webkit-box-flex: 15%;
+      -ms-flex: 15%;
+          flex: 15%;
+}
+
+.skills__container .title {
+  -webkit-box-flex: 75%;
+      -ms-flex: 75%;
+          flex: 75%;
+}
+
+.skills__list {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.skill {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skill__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skill__icon img {
+  width: 36px;
+}
+
+.skill__name {
+  text-align: center;
+}
+
+.transition {
+  position: relative;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  height: 5rem;
+}
+
+.transition__dash {
+  position: absolute;
+  right: 16%;
+  height: 100%;
+  width: 0.28rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #457b9d), color-stop(10%, #457b9d), color-stop(10%, transparent), color-stop(20%, transparent), color-stop(20%, #457b9d), color-stop(30%, #457b9d), color-stop(30%, transparent), color-stop(40%, transparent), color-stop(40%, #457b9d), color-stop(50%, #457b9d), color-stop(50%, transparent), color-stop(60%, transparent), color-stop(60%, #457b9d), to(#457b9d));
+  background-image: linear-gradient(#457b9d 0, #457b9d 10%, transparent 10%, transparent 20%, #457b9d 20%, #457b9d 30%, transparent 30%, transparent 40%, #457b9d 40%, #457b9d 50%, transparent 50%, transparent 60%, #457b9d 60%, #457b9d 100%);
+  background-clip: border-box;
+}
+/*# sourceMappingURL=main.css.map */
