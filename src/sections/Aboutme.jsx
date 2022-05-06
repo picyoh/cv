@@ -1,11 +1,10 @@
 import React from 'react'
 
-import logo  from "../../assets/illuoimnow.jpg"
-import "./aboutme.css"
+import logo  from "../assets/illuoimnow.jpg"
 
 function AboutMe() {
     return (
-        <section className='aboutMe'>
+        <section className='aboutme'>
             <div className="aboutme__picture">
                 <img src={logo} alt="Yohann Picot" />
             </div>

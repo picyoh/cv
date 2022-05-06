@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: $back-color;
+  color: $fake-white;
+}
+
+.app {
+  padding: 3rem;
+}
+/* TODO: responsive & typo & colors */
+p {
+  flex: 100%;
+  text-align: start;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+svg {
+  color: $secondary-color;
+  font-size: 2rem;
+}
+
+.titleContainer {
+  display: flex;
+  position: relative;
+}
+
+.titleContainer::after {
+  content: "";
+  position: absolute;
+  top: -1.05rem;
+  right: 0%;
+  width: 1rem;
+  height: 1rem;
+  background-color: $back-color;
+  filter: drop-shadow(0.5rem 0.5rem $back-color);
+  border: 0.3rem solid $primary-color;
+  border-left: 0.3rem solid transparent;
+  border-bottom-right-radius: 1rem;
+  border-top: none;
+  border-left: none;
+}
+
+.emptySpace {
+  flex: 30%;
+}
+
+.title {
+  position: relative;
+  z-index: -1;
+  flex: 63.5%;
+  padding: 2rem 1.5rem;
+  border: 0.3rem solid $primary-color;
+  border-left: 0.3rem solid transparent;
+  border-top-left-radius: 1rem;
+  border-right: none;
+  border-bottom: none;
+  background-image: linear-gradient(
+    $primary-color 65%,
+    transparent 65%,
+    transparent 70%,
+    $primary-color 70%,
+    $primary-color 75%,
+    transparent 75%,
+    transparent 80%,
+    $primary-color 80%,
+    $primary-color 85%,
+    transparent 85%,
+    transparent 90%,
+    $primary-color 90%,
+    $primary-color 95%,
+    transparent 95%,
+    transparent 100%
+  );
+  background-clip: border-box;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  width: 36%;
+  height: 0.5rem;
+  background-color: $back-color;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -0.05rem;
+  left: 0;
+  width: 101%;
+  height: 101%;
+  border-top-left-radius: 0.8rem;
+  background-color: $back-color;
+  background-clip: padding-box;
+}
+
+.title h3 {
+  text-align: start;
+}
+
+.title h3::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 98.9%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: $back-color;
+  filter: drop-shadow(0 0.3rem $back-color);
+  border: 0.3rem solid $primary-color;
+  border-radius: 50%;
+}

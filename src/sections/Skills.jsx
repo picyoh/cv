@@ -4,12 +4,10 @@ import { IconContext } from 'react-icons'
 import { FaJs, FaNodeJs, FaReact } from "react-icons/fa"
 import { SiRedux, SiAdobecreativecloud } from "react-icons/si"
 
-import Html from "../../assets/icons/html.png"
-import Sass from "../../assets/icons/sass.png"
-import Vsc from '../../assets/icons/vsc.png'
-import Figma from "../../assets/icons/figma.png"
-
-import './skills.css'
+import Html from "../assets/icons/html.png"
+import Sass from "../assets/icons/sass.png"
+import Vsc from '../assets/icons/vsc.png'
+import Figma from "../assets/icons/figma.png"
 
 function Skills() {
     const stack = [

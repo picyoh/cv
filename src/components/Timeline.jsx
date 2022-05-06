@@ -4,8 +4,6 @@ import { GrCertificate } from "react-icons/gr"
 import { FaGraduationCap } from "react-icons/fa"
 import { ImBooks } from "react-icons/im"
 
-import "./timeline.css"
-
 function Timeline(props) {
 
     const { datas } = props;

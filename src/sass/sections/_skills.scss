@@ -9,7 +9,7 @@
       right: 0;
       width: 29%;
       height: 2rem;
-      background-color: var(--back-color);
+      background-color: $back-color;
     }
 
     &::after {
@@ -64,20 +64,20 @@
     height: 100%;
     width: 0.28rem;
     background-image: linear-gradient(
-      var(--primary-color) 0,
-      var(--primary-color) 10%,
+      $primary-color 0,
+      $primary-color 10%,
       transparent 10%,
       transparent 20%,
-      var(--primary-color) 20%,
-      var(--primary-color) 30%,
+      $primary-color 20%,
+      $primary-color 30%,
       transparent 30%,
       transparent 40%,
-      var(--primary-color) 40%,
-      var(--primary-color) 50%,
+      $primary-color 40%,
+      $primary-color 50%,
       transparent 50%,
       transparent 60%,
-      var(--primary-color) 60%,
-      var(--primary-color) 100%
+      $primary-color 60%,
+      $primary-color 100%
     );
     background-clip: border-box;
   }

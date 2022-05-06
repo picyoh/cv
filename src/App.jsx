@@ -1,10 +1,8 @@
-import AboutMe from "./sections/aboutme/Aboutme";
-import Portfolio from "./sections/portfolio/Portfolio";
-import Skills from "./sections/skills/Skills";
-import Education from "./sections/education/Education";
-import Contact from "./sections/contact/Contact";
-
-import './app.css'
+import AboutMe from "./sections/Aboutme";
+import Portfolio from "./sections/Portfolio";
+import Skills from "./sections/Skills";
+import Education from "./sections/Education";
+import Contact from "./sections/Contact";
 
 function App() {
   return (

@@ -1,11 +1,9 @@
 import React from 'react'
 
-import Card from '../../components/cards/Card'
+import Card from '../components/Card'
 
-import './portfolio.css'
-
-import firefox from '../../assets/firefox.png'
-import fishEye from '../../assets/fishEye.png'
+import firefox from '../assets/firefox.png'
+import fishEye from '../assets/fishEye.png'
 
 function Portfolio() {
 

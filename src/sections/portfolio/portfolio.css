@@ -1,7 +1,0 @@
-.portfolio {
-  margin: 0 10%;
-}
-
-.portfolio .titleContainer .title::before {
-  content: none;
-}

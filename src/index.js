@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import "./index.css";
+import "./sass/main.scss";
 import reportWebVitals from "./reportWebVitals";
 
 import App from "./App";
-import Error from './sections/error/Error'
+import Error from './sections/Error'
 
 ReactDOM.render(
   <React.StrictMode>

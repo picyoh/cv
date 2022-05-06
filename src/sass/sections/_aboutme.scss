@@ -1,11 +1,11 @@
-.aboutMe {
+.aboutme {
   display: flex;
   flex-flow: row wrap;
   padding: 0 10%;
 
   &__picture {
     flex: 7%;
-    filter: drop-shadow(0 0.3rem 0 var(--primary-color));
+    filter: drop-shadow(0 0.3rem 0 $primary-color);
 
     img {
       border-radius: 50% 50% 0 50%;
@@ -41,7 +41,7 @@
         flex: 47%;
         display: flex;
         align-items: center;
-        border: 0.3rem solid var(--primary-color);
+        border: 0.3rem solid $primary-color;
         border-top-right-radius: 1rem;
         border-left: none;
         border-bottom: none;

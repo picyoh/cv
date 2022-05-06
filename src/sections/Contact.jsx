@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 
-import "./contact.css"
 // TODO: check mail feature
 function Contact() {
     return (
