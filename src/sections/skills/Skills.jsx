@@ -32,7 +32,7 @@ function Skills() {
             items.map((item, index) => {
                 return (
                     <div className="skill" key={index}>
-                        <span className='skillIcon'>
+                        <span className='skill__icon'>
                             {item.icon === undefined ?
                                 <>
                                 <img src={item.src} alt={item.name} />
@@ -45,7 +45,7 @@ function Skills() {
                                 </IconContext.Provider>
                             }
                         </span>
-                        <p className='skillName'>{item.name}</p>
+                        <p className='skill__name'>{item.name}</p>
                     </div>
                 )
             })
@@ -54,20 +54,20 @@ function Skills() {
 
     return (
         <section className='skills'>
-            <div className="titleContainer">
+            <div className="skills__container">
                 <span className='emptySpace'></span>
                 <div className="title">
                     <h3>Skills</h3>
                 </div>
             </div>
-            <div className='skillList'>
+            <div className='skills__list'>
                 {listItems(stack)}
             </div>
-            <div className="skillList">
+            <div className="skills__list">
                 {listItems(softwares)}
             </div>
             <div className="transition">
-                <div></div>
+                <div className='transition__dash'></div>
             </div>
         </section>
 
