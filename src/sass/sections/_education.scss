@@ -1,0 +1,21 @@
+.education {
+  margin: 0 10%;
+
+  &__container {
+    &::after {
+      right: 16%;
+    }
+  }
+
+  .emptySpace {
+    flex: 57%;
+  }
+
+  .title {
+    flex: 50%;
+
+    &h3::after {
+      right: 98%;
+    }
+  }
+}

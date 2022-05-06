@@ -6,7 +6,7 @@ import { ImBooks } from "react-icons/im"
 
 import "./timeline.css"
 
-function TimeLine(props) {
+function Timeline(props) {
 
     const { datas } = props;
 
@@ -69,4 +69,4 @@ function TimeLine(props) {
     )
 }
 
-export default TimeLine
+export default Timeline
