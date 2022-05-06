@@ -9,10 +9,10 @@ function Card(props) {
     return (
         index === 0 ?
             <div className="card">
-                <div className="cardTitleLeft">
+                <div className="card__title__left">
                     <h4>{name}</h4>
                 </div>
-                <div className="cardFirstContent">
+                <div className="card__first">
                     <div className="imgContainer">
                         <img alt={name} src={src} />
                     </div>
@@ -21,21 +21,21 @@ function Card(props) {
             :
             index % 2 === 1 ?
                 <div className="card">
-                    <div className="cardContentLeft">
+                    <div className="card__content__left">
                         <div className="imgContainer">
                             <img alt={name} src={src} />
                         </div>
                     </div>
-                    <div className="cardTitleRight">
+                    <div className="card__title__right">
                         <h4>{name}</h4>
                     </div>
                 </div>
                 :
                 <div className="card">
-                    <div className="cardTitleLeft">
+                    <div className="card__title__left">
                         <h4>{name}</h4>
                     </div>
-                    <div className="cardContentRight">
+                    <div className="card__content__right">
                         <div className="imgContainer">
                             <img alt={name} src={src} />
                         </div>
