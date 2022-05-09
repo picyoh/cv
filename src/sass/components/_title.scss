@@ -1,0 +1,43 @@
+.title {
+  position: relative;
+  width: 80%;
+  z-index: 1;
+  padding: 2rem 1rem;
+  border: none;
+  border-left: 0.3rem solid transparent;
+  border-top-left-radius: 1rem;
+  border-right: none;
+  border-bottom: none;
+  background-image: linear-gradient(
+    $primary-color 0,
+    $primary-color 60%,
+    transparent 60%,
+    transparent 66%,
+    $primary-color 66%,
+    $primary-color 72%,
+    transparent 72%,
+    transparent 78%,
+    $primary-color 78%,
+    $primary-color 84%,
+    transparent 84%,
+    transparent 90%,
+    $primary-color 90%,
+    $primary-color 96%,
+    transparent 96%,
+    transparent 100%
+  );
+  background-clip: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0.25rem;
+    left: -0.05rem;
+    width: 101%;
+    height: 100%;
+    border-top-left-radius: 0.8rem;
+    background-color: $back-color;
+    background-clip: padding-box;
+  }
+}

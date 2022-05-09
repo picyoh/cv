@@ -1,68 +1,53 @@
 .skills {
-  // margin: 0 10%;
+  position: relative;
 
-  &__container {
-    &::before {
-      content: "";
-      position: absolute;
-      top: -1.5rem;
-      right: 0;
-      width: 29%;
-      height: 2rem;
-      background-color: $back-color;
-    }
+  &::before {
+    @include intro-curve;
+  }
 
-    &::after {
-      right: 29.7%;
-    }
-
-    .emptySpace {
-      flex: 15%;
-    }
-    .title {
-      flex: 75%;
-    }
+  .title {
+    width: 55%;
+    margin-left: 3.9rem;
   }
 
   &__list {
-    flex: 30%;
+    position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    position: relative;
+    align-self: flex-end;
+    gap: 0.5rem;
   }
 }
 
 .skill {
-  flex: 25%;
-  padding: 1rem;
+  flex: 30%;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+  align-items: center;
+  // TODO: mixin
+  &__icon img {
+    height: 42px;
+  }
 
-  &__icon {
-    display: flex;
-    justify-content: center;
-
-    img {
-      width: 36px;
-    }
+  &__icon svg {
+    height: 42px;
   }
 
   &__name {
-    text-align: center;
+    margin: 0.3rem;
   }
 }
 
 .transition {
   position: relative;
   flex: 100%;
-  height: 5rem;
+  height: 3.5rem;
 
   &__dash {
     position: absolute;
-    right: 16%;
+    right: 15%;
     height: 100%;
-    width: 0.28rem;
+    width: 0.25rem;
     background-image: linear-gradient(
       $primary-color 0,
       $primary-color 10%,

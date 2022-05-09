@@ -1,0 +1,14 @@
+@mixin intro-curve {
+    content: "";
+    position: absolute;
+    top: -1.05rem;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    background-color: $back-color;
+    filter: drop-shadow(0.5rem 0.3rem 0 $back-color);
+    border: 0.3rem solid $primary-color;
+    border-bottom-right-radius: 1rem;
+    border-top: none;
+    border-left: none;
+}

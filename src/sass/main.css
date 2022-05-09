@@ -23,7 +23,6 @@ body {
 /* TODO: responsive & typo & colors */
 p {
   font-size: 0.8em;
-  margin: 0;
 }
 
 h1, h2, h3, h4 {
@@ -65,64 +64,6 @@ svg {
   font-size: 2rem;
 }
 
-.titleContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.titleContainer::after {
-  content: "";
-  position: absolute;
-  top: -1.05rem;
-  right: 0%;
-  width: 1rem;
-  height: 1rem;
-  background-color: #1d3557;
-  -webkit-filter: drop-shadow(0.5rem 0.5rem #1d3557);
-          filter: drop-shadow(0.5rem 0.5rem #1d3557);
-  border: 0.3rem solid #457b9d;
-  border-left: 0.3rem solid transparent;
-  border-bottom-right-radius: 1rem;
-  border-top: none;
-  border-left: none;
-}
-
-.emptySpace {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
-}
-
-.title {
-  position: relative;
-  width: 75%;
-  z-index: -1;
-  padding: 2rem 1rem;
-  border: none;
-  border-left: 0.3rem solid transparent;
-  border-top-left-radius: 1rem;
-  border-right: none;
-  border-bottom: none;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #457b9d), color-stop(60%, #457b9d), color-stop(60%, transparent), color-stop(66%, transparent), color-stop(66%, #457b9d), color-stop(72%, #457b9d), color-stop(72%, transparent), color-stop(78%, transparent), color-stop(78%, #457b9d), color-stop(84%, #457b9d), color-stop(84%, transparent), color-stop(90%, transparent), color-stop(90%, #457b9d), color-stop(96%, #457b9d), color-stop(96%, transparent), to(transparent));
-  background-image: linear-gradient(#457b9d 0, #457b9d 60%, transparent 60%, transparent 66%, #457b9d 66%, #457b9d 72%, transparent 72%, transparent 78%, #457b9d 78%, #457b9d 84%, transparent 84%, transparent 90%, #457b9d 90%, #457b9d 96%, transparent 96%, transparent 100%);
-  background-clip: border-box;
-}
-
-.title::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0.3rem;
-  left: -0.05rem;
-  width: 101%;
-  height: 100%;
-  border-top-left-radius: 0.8rem;
-  background-color: #1d3557;
-  background-clip: padding-box;
-}
-
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,6 +88,10 @@ svg {
 .card__first .imgContainer {
   padding: 5%;
   padding-right: 0;
+}
+
+.card__first .imgContainer img {
+  border-radius: 0 1rem;
 }
 
 .card__title__first {
@@ -278,35 +223,12 @@ svg {
   border-right: 0.3rem solid #457b9d;
 }
 
-.card__content__left::before {
-  content: "";
-  position: absolute;
-  top: -0.5rem;
-  left: 0;
-  width: 8%;
-  height: 0.5rem;
-  background-color: #1d3557;
-}
-
-.card__content__left::after {
-  content: "";
-  position: absolute;
-  top: -1.35rem;
-  left: 0;
-  width: 1rem;
-  height: 1rem;
-  background-color: #1d3557;
-  -webkit-filter: drop-shadow(-0.5rem 0.3rem 0 #1d3557);
-          filter: drop-shadow(-0.5rem 0.3rem 0 #1d3557);
-  border: 0.3rem solid #457b9d;
-  border-bottom-left-radius: 1rem;
-  border-top: none;
-  border-right: none;
-}
-
 .card__content__left .imgContainer {
-  padding: 5%;
   padding-left: 0;
+}
+
+.card__content__left .imgContainer img {
+  border-radius: 1rem 0;
 }
 
 .card__content__right {
@@ -333,8 +255,11 @@ svg {
 }
 
 .card__content__right .imgContainer {
-  padding: 5%;
   padding-right: 0;
+}
+
+.card__content__right .imgContainer img {
+  border-radius: 0 1rem;
 }
 
 .threadRight::before {
@@ -355,17 +280,13 @@ svg {
 
 .imgContainer {
   width: 100%;
+  padding: 5%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 .imgContainer img {
   width: 100%;
-  border-radius: 0 1rem;
-}
-
-.cardContentLeft img {
-  border-radius: 1rem 0;
 }
 
 /* TODO; calc line position */
@@ -494,6 +415,34 @@ svg {
   text-align: start;
 }
 
+.title {
+  position: relative;
+  width: 80%;
+  z-index: 1;
+  padding: 2rem 1rem;
+  border: none;
+  border-left: 0.3rem solid transparent;
+  border-top-left-radius: 1rem;
+  border-right: none;
+  border-bottom: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #457b9d), color-stop(60%, #457b9d), color-stop(60%, transparent), color-stop(66%, transparent), color-stop(66%, #457b9d), color-stop(72%, #457b9d), color-stop(72%, transparent), color-stop(78%, transparent), color-stop(78%, #457b9d), color-stop(84%, #457b9d), color-stop(84%, transparent), color-stop(90%, transparent), color-stop(90%, #457b9d), color-stop(96%, #457b9d), color-stop(96%, transparent), to(transparent));
+  background-image: linear-gradient(#457b9d 0, #457b9d 60%, transparent 60%, transparent 66%, #457b9d 66%, #457b9d 72%, transparent 72%, transparent 78%, #457b9d 78%, #457b9d 84%, transparent 84%, transparent 90%, #457b9d 90%, #457b9d 96%, transparent 96%, transparent 100%);
+  background-clip: border-box;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0.25rem;
+  left: -0.05rem;
+  width: 101%;
+  height: 100%;
+  border-top-left-radius: 0.8rem;
+  background-color: #1d3557;
+  background-clip: padding-box;
+}
+
 .aboutme__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -545,9 +494,9 @@ svg {
   position: absolute;
   z-index: -1;
   top: -0.25rem;
-  left: 0;
-  width: 101.5%;
-  height: 107%;
+  left: 0.25rem;
+  width: 100%;
+  height: 102%;
   border-radius: 1rem;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(40%, transparent), color-stop(40%, #457b9d), to(#457b9d));
   background-image: linear-gradient(to right, transparent 0, transparent 40%, #457b9d 40%, #457b9d 100%);
@@ -578,60 +527,83 @@ svg {
   background-color: #457b9d;
 }
 
-.education__container::after {
-  right: 16%;
+.education {
+  position: relative;
 }
 
-.education .emptySpace {
-  -webkit-box-flex: 57%;
-      -ms-flex: 57%;
-          flex: 57%;
+.education::before {
+  content: "";
+  position: absolute;
+  top: -1.05rem;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  background-color: #1d3557;
+  -webkit-filter: drop-shadow(0.5rem 0.3rem 0 #1d3557);
+          filter: drop-shadow(0.5rem 0.3rem 0 #1d3557);
+  border: 0.3rem solid #457b9d;
+  border-bottom-right-radius: 1rem;
+  border-top: none;
+  border-left: none;
+  right: 15%;
 }
 
 .education .title {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  width: 80%;
 }
 
 .education .titleh3::after {
   right: 98%;
 }
 
-.portfolio__container .title::before {
-  content: none;
+.portfolio {
+  position: relative;
 }
 
-.skills__container::before {
+.portfolio::before {
   content: "";
   position: absolute;
-  top: -1.5rem;
+  top: -1.05rem;
   right: 0;
-  width: 29%;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
   background-color: #1d3557;
+  -webkit-filter: drop-shadow(0.5rem 0.3rem 0 #1d3557);
+          filter: drop-shadow(0.5rem 0.3rem 0 #1d3557);
+  border: 0.3rem solid #457b9d;
+  border-bottom-right-radius: 1rem;
+  border-top: none;
+  border-left: none;
+  right: -0.25rem;
 }
 
-.skills__container::after {
-  right: 29.7%;
+.skills {
+  position: relative;
 }
 
-.skills__container .emptySpace {
-  -webkit-box-flex: 15%;
-      -ms-flex: 15%;
-          flex: 15%;
+.skills::before {
+  content: "";
+  position: absolute;
+  top: -1.05rem;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  background-color: #1d3557;
+  -webkit-filter: drop-shadow(0.5rem 0.3rem 0 #1d3557);
+          filter: drop-shadow(0.5rem 0.3rem 0 #1d3557);
+  border: 0.3rem solid #457b9d;
+  border-bottom-right-radius: 1rem;
+  border-top: none;
+  border-left: none;
 }
 
-.skills__container .title {
-  -webkit-box-flex: 75%;
-      -ms-flex: 75%;
-          flex: 75%;
+.skills .title {
+  width: 55%;
+  margin-left: 3.9rem;
 }
 
 .skills__list {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -639,41 +611,37 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  gap: 0.5rem;
 }
 
 .skill {
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
-  padding: 1rem;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.skill__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skill__icon img {
-  width: 36px;
+  height: 42px;
+}
+
+.skill__icon svg {
+  height: 42px;
 }
 
 .skill__name {
-  text-align: center;
+  margin: 0.3rem;
 }
 
 .transition {
@@ -681,14 +649,14 @@ svg {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
-  height: 5rem;
+  height: 3.5rem;
 }
 
 .transition__dash {
   position: absolute;
-  right: 16%;
+  right: 15%;
   height: 100%;
-  width: 0.28rem;
+  width: 0.25rem;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #457b9d), color-stop(10%, #457b9d), color-stop(10%, transparent), color-stop(20%, transparent), color-stop(20%, #457b9d), color-stop(30%, #457b9d), color-stop(30%, transparent), color-stop(40%, transparent), color-stop(40%, #457b9d), color-stop(50%, #457b9d), color-stop(50%, transparent), color-stop(60%, transparent), color-stop(60%, #457b9d), to(#457b9d));
   background-image: linear-gradient(#457b9d 0, #457b9d 10%, transparent 10%, transparent 20%, #457b9d 20%, #457b9d 30%, transparent 30%, transparent 40%, #457b9d 40%, #457b9d 50%, transparent 50%, transparent 60%, #457b9d 60%, #457b9d 100%);
   background-clip: border-box;

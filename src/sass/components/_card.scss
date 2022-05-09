@@ -11,9 +11,12 @@
     .imgContainer {
       padding: 5%;
       padding-right: 0;
+
+      img {
+        border-radius: 0 1rem;
+      }
     }
   }
-  // TODO: round corner indep a juster
   &__title {
     &__first {
       position: relative;
@@ -132,34 +135,37 @@
       border: none;
       border-right: 0.3rem solid $primary-color;
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: -0.5rem;
-        left: 0;
-        width: 8%;
-        height: 0.5rem;
-        background-color: $back-color;
-      }
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: -0.5rem;
+      //   left: 0;
+      //   width: 8%;
+      //   height: 0.5rem;
+      //   background-color: $back-color;
+      // }
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: -1.35rem;
-        left: 0;
-        width: 1rem;
-        height: 1rem;
-        background-color: $back-color;
-        filter: drop-shadow(-0.5rem 0.3rem 0 $back-color);
-        border: 0.3rem solid $primary-color;
-        border-bottom-left-radius: 1rem;
-        border-top: none;
-        border-right: none;
-      }
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   top: -1.35rem;
+      //   left: 0;
+      //   width: 1rem;
+      //   height: 1rem;
+      //   background-color: $back-color;
+      //   filter: drop-shadow(-0.5rem 0.3rem 0 $back-color);
+      //   border: 0.3rem solid $primary-color;
+      //   border-bottom-left-radius: 1rem;
+      //   border-top: none;
+      //   border-right: none;
+      // }
 
       .imgContainer {
-        padding: 5%;
         padding-left: 0;
+
+        img {
+          border-radius: 1rem 0;
+        }
       }
     }
 
@@ -181,13 +187,15 @@
       }
 
       .imgContainer {
-        padding: 5%;
         padding-right: 0;
+        img {
+          border-radius: 0 1rem;
+        }
       }
     }
   }
 }
-// TODO: move thread in an another file
+// TODO: move thread in an another file and imgContainer to mixins
 .threadRight::before {
   content: "";
   position: absolute;
@@ -205,14 +213,10 @@
 
 .imgContainer {
   width: 100%;
+  padding: 5%;
   object-fit: contain;
 }
 
 .imgContainer img {
   width: 100%;
-  border-radius: 0 1rem;
-}
-
-.cardContentLeft img {
-  border-radius: 1rem 0;
 }

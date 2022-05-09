@@ -33,7 +33,7 @@ function Skills() {
                         <span className='skill__icon'>
                             {item.icon === undefined ?
                                 <>
-                                <img src={item.src} alt={item.name} />
+                                    <img src={item.src} alt={item.name} />
                                 </>
                                 :
                                 <IconContext.Provider value={{ color: item.color }}>
@@ -52,11 +52,8 @@ function Skills() {
 
     return (
         <section className='skills'>
-            <div className="skills__container">
-                <span className='emptySpace'></span>
-                <div className="title">
-                    <h3>Skills</h3>
-                </div>
+            <div className="title">
+                <h3>Skills</h3>
             </div>
             <div className='skills__list'>
                 {listItems(stack)}

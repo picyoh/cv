@@ -1,11 +1,7 @@
 .portfolio {
-  // margin: 0 10%;
-
-  &__container {
-    .title {
-      &::before {
-        content: none;
-      }
-    }
+  position: relative;
+  &::before {
+    @include intro-curve;
+    right: -0.25rem;
   }
 }

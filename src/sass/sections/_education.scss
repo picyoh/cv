@@ -1,19 +1,12 @@
 .education {
-  // margin: 0 10%;
-
-  &__container {
-    &::after {
-      right: 16%;
-    }
-  }
-
-  .emptySpace {
-    flex: 57%;
+  position: relative;
+  &::before {
+    @include intro-curve;
+    right: 15%
   }
 
   .title {
-    flex: 50%;
-
+    width:80%;
     &h3::after {
       right: 98%;
     }

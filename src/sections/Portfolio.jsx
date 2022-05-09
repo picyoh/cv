@@ -21,16 +21,13 @@ function Portfolio() {
             <Card name={element.name} src={element.src} index={index} key={index} />
         )
     })
-    
+
     return (
         <section className='portfolio'>
-            <div className="portfolio__container">
-                <span className='emptySpace'></span>
-                <div className="title">
-                    <h3>Portfolio</h3>
-                </div>
+            <div className="title">
+                <h3>Portfolio</h3>
             </div>
-            { cards }
+            {cards}
         </section>
     )
 }
