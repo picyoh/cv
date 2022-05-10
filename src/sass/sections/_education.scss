@@ -2,13 +2,14 @@
   position: relative;
   &::before {
     @include intro-curve;
-    right: 15%
+    right: 15%;
   }
 
   .title {
-    width:80%;
-    &h3::after {
-      right: 98%;
+    width: 30%;
+    margin-left: 33%;
+    h3::after {
+      left: -0.7rem;
     }
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { educationDatas } from '../datas/educationDatas'
+import { timelineDatas } from '../datas/timelineDatas'
 import Timeline from '../components/Timeline'
 
 function Education() {
@@ -9,7 +9,7 @@ function Education() {
             <div className="title">
                 <h3>Education</h3>
             </div>
-            <Timeline datas={educationDatas} />
+            <Timeline datas={timelineDatas} />
         </div>
     )
 }

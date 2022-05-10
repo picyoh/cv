@@ -1,7 +1,6 @@
 import React from 'react'
 
-import { GrCertificate } from "react-icons/gr"
-import { FaGraduationCap } from "react-icons/fa"
+import { FaGraduationCap, FaMoneyBill } from "react-icons/fa"
 import { ImBooks } from "react-icons/im"
 
 function Timeline(props) {
@@ -9,7 +8,7 @@ function Timeline(props) {
     const { datas } = props;
 
     const iconTypes = [
-        { name: "certification", icon: <GrCertificate /> },
+        { name: "job", icon: <FaMoneyBill /> },
         { name: "degree", icon: <FaGraduationCap /> },
         { name: "school", icon: <ImBooks /> },
     ];
@@ -33,11 +32,11 @@ function Timeline(props) {
     const list = datas.map((element, index) => {
 
         const iconType = iconTypes.filter(iconType => iconType.name === element.type)[0];
-
+        // TODO: hide jobs
         return (
             <div className="timeline__content" key={index}>
                 <div className="timeline__content__left">
-                    {iconType.name === "school" ?
+                    {iconType.name === "school" || "job" ?
                         <div className='content'>
                             <p>{element.infos}</p>
                             {iconSpan(iconType.icon)}
