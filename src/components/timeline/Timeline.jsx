@@ -57,7 +57,7 @@ function Timeline(props) {
     return (
         <div className='timeline'>
             {list}
-            <button onClick={toogleJobs}>Voir la liste complète</button>
+            <button onClick={toogleJobs}>{jobToggled === true ? "Liste réduite" :"Voir la liste complète"}</button>
         </div>
     )
 }

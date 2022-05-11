@@ -1,6 +1,9 @@
 /* TODO; ajuster icones et content & button*/
 .timeline {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &::after {
     content: "";
@@ -58,16 +61,25 @@
       .content {
         border-radius: 0 1rem 0 1rem;
 
-        &__header p{
+        &__header p {
           order: 1;
         }
-
       }
 
       .date {
         border-radius: 0 1rem 0 1rem;
       }
     }
+  }
+
+  button {
+    position: relative;
+    z-index: 1;
+    height: 2.5rem;
+    border: none;
+    border-radius: 1rem;
+    color: $fake-white;
+    background-color: $primary-color;
   }
 }
 
@@ -83,10 +95,14 @@
 
 .content {
   background-color: $primary-color;
-  
+
   &__header {
     display: flex;
     align-items: center;
+  }
+
+  &__arcordion {
+    background-color: $back-color;
   }
 }
 
@@ -106,6 +122,6 @@
   padding: 0.5rem;
 }
 
-.hidden{
+.hidden {
   display: none;
 }

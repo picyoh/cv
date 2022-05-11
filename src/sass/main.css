@@ -11,6 +11,7 @@ body {
 
 .app {
   padding: 2rem;
+  padding-top: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,6 +73,8 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-decoration: none;
+  color: #f1faee;
 }
 
 .card__first {
@@ -289,9 +292,23 @@ svg {
   width: 100%;
 }
 
+h4 {
+  font-weight: 500;
+}
+
 /* TODO; ajuster icones et content & button*/
 .timeline {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .timeline::after {
@@ -378,6 +395,16 @@ svg {
   border-radius: 0 1rem 0 1rem;
 }
 
+.timeline button {
+  position: relative;
+  z-index: 1;
+  height: 2.5rem;
+  border: none;
+  border-radius: 1rem;
+  color: #f1faee;
+  background-color: #457b9d;
+}
+
 .date {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -403,6 +430,10 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.content__arcordion {
+  background-color: #1d3557;
 }
 
 .icon {
@@ -514,17 +545,32 @@ svg {
   width: 100%;
   height: 102%;
   border-radius: 1rem;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(40%, transparent), color-stop(40%, #457b9d), to(#457b9d));
-  background-image: linear-gradient(to right, transparent 0, transparent 40%, #457b9d 40%, #457b9d 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(20%, transparent), color-stop(20%, #457b9d), to(#457b9d));
+  background-image: linear-gradient(to right, transparent 0, transparent 20%, #457b9d 20%, #457b9d 100%);
   background-position: 0;
   background-clip: border-box;
 }
 
+@media (min-width: 325px) {
+  .aboutme__bottom::before {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(15%, transparent), color-stop(15%, #457b9d), to(#457b9d));
+    background-image: linear-gradient(to right, transparent 0, transparent 15%, #457b9d 15%, #457b9d 100%);
+  }
+}
+
+@media (min-width: 765px) {
+  .aboutme__bottom::before {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, transparent), color-stop(10%, transparent), color-stop(10%, #457b9d), to(#457b9d));
+    background-image: linear-gradient(to right, transparent 0, transparent 10%, #457b9d 10%, #457b9d 100%);
+  }
+}
+
 .contact {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 1.5%;
+  position: fixed;
   z-index: 2;
+  width: 80%;
+  top: 0;
+  padding-top: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,9 +584,17 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 1rem;
-  padding: 0.5rem;
-  background-color: #457b9d;
+}
+
+.contact::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  background-color: #1d3557;
 }
 
 .education {

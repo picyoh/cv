@@ -39,12 +39,31 @@
       background-image: linear-gradient(
         to right,
         transparent 0,
-        transparent 40%,
-        $primary-color 40%,
+        transparent 20%,
+        $primary-color 20%,
         $primary-color 100%
       );
       background-position: 0;
       background-clip: border-box;
+
+      @media (min-width:325px) {
+        background-image: linear-gradient(
+          to right,
+          transparent 0,
+          transparent 15%,
+          $primary-color 15%,
+          $primary-color 100%
+        );
+      }
+      @media (min-width:765px) {
+        background-image: linear-gradient(
+          to right,
+          transparent 0,
+          transparent 10%,
+          $primary-color 10%,
+          $primary-color 100%
+        );
+      }
     }
   }
 }

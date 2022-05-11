@@ -5,9 +5,9 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 
 // TODO: check mail feature
+// TODO: add Calendly
 // TODO: move to top
 // TODO: remove background
-// TODO: add Calendly
 
 function Contact() {
     return (

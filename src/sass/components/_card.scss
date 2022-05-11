@@ -1,6 +1,8 @@
 .card {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: $fake-white;
 
   &__first {
     display: flex;
@@ -219,4 +221,8 @@
 
 .imgContainer img {
   width: 100%;
+}
+
+h4 {
+  font-weight: 500;
 }
