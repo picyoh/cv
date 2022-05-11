@@ -80,13 +80,6 @@ export const timelineDatas = [
     type: "degree",
   },
   {
-    year: "2009 & 2010",
-    title: "Employé service Espace vert",
-    place: "Ville de Montesson",
-    infos: "Entretient des espaces verts",
-    type: "job",
-  },
-  {
     year: "2008",
     title: "Bac S.T.I",
     fullName: "Baccalauréat S.T.I Génie Electrotechnique",

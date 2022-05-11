@@ -1,9 +1,9 @@
 import React from 'react'
 import { timelineDatas } from '../datas/timelineDatas'
-import Timeline from '../components/Timeline'
+import Timeline from '../components/timeline/Timeline'
 
 function Education() {
-    // TODO: ajouter dropdown pour chaque content + dropdown entre 2022 et 2010 + inverser tableau
+    // TODO: supprimer education
     return (
         <div className="education">
             <div className="title">

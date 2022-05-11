@@ -289,7 +289,7 @@ svg {
   width: 100%;
 }
 
-/* TODO; calc line position */
+/* TODO; ajuster icones et content & button*/
 .timeline {
   position: relative;
 }
@@ -304,19 +304,20 @@ svg {
   background-color: #457b9d;
 }
 
-.timeline__content {
+.timeline__element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3%;
+  gap: 10%;
   padding-bottom: 1rem;
 }
 
-.timeline__content__left {
+.timeline__element__left {
   position: relative;
-  -webkit-box-flex: 48%;
-      -ms-flex: 48%;
-          flex: 48%;
+  width: 45%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   text-align: end;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,12 +327,12 @@ svg {
           justify-content: flex-end;
 }
 
-.timeline__content__left::before {
+.timeline__element__left::before {
   content: "";
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 100%;
+  left: 104%;
   width: 0.5rem;
   height: 0.5rem;
   background-color: #1d3557;
@@ -341,19 +342,20 @@ svg {
   border-radius: 50%;
 }
 
-.timeline__content__left .content {
+.timeline__element__left .content {
   border-radius: 1rem 0 1rem 0;
 }
 
-.timeline__content__left .date {
+.timeline__element__left .date {
   border-radius: 1rem 0 1rem 0;
 }
 
-.timeline__content__right {
+.timeline__element__right {
   position: relative;
-  -webkit-box-flex: 48%;
-      -ms-flex: 48%;
-          flex: 48%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,11 +364,17 @@ svg {
           justify-content: flex-start;
 }
 
-.timeline__content__right .content {
+.timeline__element__right .content {
   border-radius: 0 1rem 0 1rem;
 }
 
-.timeline__content__right .date {
+.timeline__element__right .content__header p {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.timeline__element__right .date {
   border-radius: 0 1rem 0 1rem;
 }
 
@@ -381,11 +389,14 @@ svg {
 }
 
 .date p {
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
 .content {
   background-color: #457b9d;
+}
+
+.content__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,8 +406,8 @@ svg {
 }
 
 .icon {
-  height: 24px;
-  width: 24px;
+  height: 16px;
+  width: 16px;
   padding: 0.5rem;
   border: 1px solid #f1faee;
   border-radius: 50%;
@@ -413,6 +424,11 @@ svg {
 
 .content p {
   text-align: start;
+  padding: 0.5rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .title {
@@ -437,7 +453,7 @@ svg {
   top: 0.25rem;
   left: -0.05rem;
   width: 101%;
-  height: 100%;
+  height: 95%;
   border-top-left-radius: 0.8rem;
   background-color: #1d3557;
   background-clip: padding-box;
@@ -549,11 +565,12 @@ svg {
 }
 
 .education .title {
-  width: 80%;
+  width: 15%;
+  margin-left: 49.5%;
 }
 
-.education .titleh3::after {
-  right: 98%;
+.education .title h3::after {
+  left: -0.7rem;
 }
 
 .portfolio {
@@ -598,8 +615,8 @@ svg {
 }
 
 .skills .title {
-  width: 55%;
-  margin-left: 3.9rem;
+  width: 65%;
+  margin-left: 15%;
 }
 
 .skills__list {

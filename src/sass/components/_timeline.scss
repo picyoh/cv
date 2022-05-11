@@ -1,4 +1,4 @@
-/* TODO; calc line position */
+/* TODO; ajuster icones et content & button*/
 .timeline {
   position: relative;
 
@@ -12,14 +12,15 @@
     background-color: $primary-color;
   }
 
-  &__content {
+  &__element {
     display: flex;
-    gap: 3%;
+    gap: 10%;
     padding-bottom: 1rem;
 
     &__left {
       position: relative;
-      flex: 48%;
+      width: 45%;
+      flex: 50%;
       text-align: end;
       display: flex;
       justify-content: flex-end;
@@ -29,7 +30,7 @@
         position: absolute;
         z-index: 1;
         top: 0;
-        left: 100%;
+        left: 104%;
         width: 0.5rem;
         height: 0.5rem;
         background-color: $back-color;
@@ -49,12 +50,18 @@
 
     &__right {
       position: relative;
-      flex: 48%;
+      flex: 50%;
+      width: 45%;
       display: flex;
       justify-content: flex-start;
 
       .content {
         border-radius: 0 1rem 0 1rem;
+
+        &__header p{
+          order: 1;
+        }
+
       }
 
       .date {
@@ -76,13 +83,16 @@
 
 .content {
   background-color: $primary-color;
-  display: flex;
-  align-items: center;
+  
+  &__header {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .icon {
-  height: 24px;
-  width: 24px;
+  height: 16px;
+  width: 16px;
   padding: 0.5rem;
   border: 1px solid $fake-white;
   border-radius: 50%;
@@ -93,4 +103,9 @@
 
 .content p {
   text-align: start;
+  padding: 0.5rem;
+}
+
+.hidden{
+  display: none;
 }
