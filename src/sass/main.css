@@ -490,6 +490,36 @@ h4 {
   background-clip: padding-box;
 }
 
+@media (min-width: 325px) {
+  .title {
+    width: 85%;
+  }
+}
+
+@media (min-width: 480px) {
+  .title {
+    width: 90%;
+  }
+}
+
+@media (min-width: 765px) {
+  .title {
+    width: 93%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .title {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1125px) {
+  .title {
+    width: 97%;
+  }
+}
+
 .aboutme__top {
   display: -webkit-box;
   display: -ms-flexbox;
