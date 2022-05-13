@@ -1,5 +1,4 @@
 body {
-  width: 100%;
   margin: 0;
   font-family: "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,6 +9,7 @@ body {
 }
 
 .app {
+  max-width: 100%;
   padding: 2rem;
   padding-top: 4rem;
   display: flex;
@@ -24,6 +24,13 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
+svg {
+  color: $secondary-color;
+  font-size: 2rem;
+}
+
+// TODO: move to aboutme
+ 
 h1 {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -34,26 +41,3 @@ h2 {
   font-size: 1rem;
 }
 
-h3 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: $primary-color;
-}
-
-h3::after {
-  content: "";
-  position: absolute;
-  top: 40%;
-  right: 97.4%;
-  width: 0.5rem;
-  height: 0.5rem;
-  background-color: $back-color;
-  filter: drop-shadow(0 0.3rem $back-color);
-  border: 0.3rem solid $primary-color;
-  border-radius: 50%;
-}
-
-svg {
-  color: $secondary-color;
-  font-size: 2rem;
-}

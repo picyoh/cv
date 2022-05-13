@@ -8,6 +8,7 @@ import Html from "../assets/icons/html.png"
 import Sass from "../assets/icons/sass.png"
 import Vsc from '../assets/icons/vsc.png'
 import Figma from "../assets/icons/figma.png"
+import Title from '../components/title/Title'
 
 function Skills() {
     const stack = [
@@ -52,9 +53,7 @@ function Skills() {
 
     return (
         <section className='skills'>
-            <div className="title">
-                <h3>Skills</h3>
-            </div>
+            <Title title={"Skills"} />
             <div className='skills__list'>
                 {listItems(stack)}
             </div>

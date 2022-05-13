@@ -6,8 +6,11 @@
   }
 
   .title {
-    width: 15%;
-    margin-left: 49.5%;
+    //padding-left: 49.5%;
+    //padding-right: 15%;
+    &__container {
+      flex: 30%;
+    }
     h3::after {
       left: -0.7rem;
     }

@@ -7,11 +7,11 @@ import Contact from "./sections/Contact";
 function App() {
   return (
     <article className="app">
+      <Contact /> 
       <AboutMe />
       <Portfolio />
       <Skills />
       <Education />
-      <Contact />
     </article>
   );
 }

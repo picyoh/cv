@@ -2,6 +2,7 @@
   &__top {
     display: flex;
     flex-flow: row nowrap;
+    gap: 5%;
     &__picture {
       flex: 50%;
       filter: drop-shadow(0 0.3rem 0 $primary-color);
@@ -15,14 +16,14 @@
       flex: 50%;
       align-self: flex-end;
       h2 {
-        padding-bottom: 0.3rem;
+        //padding-bottom: 0.3rem;
       }
     }
   }
   &__bottom {
     position: relative;
     display: flex;
-    padding: 1rem;
+    //padding: 1rem;
     border-radius: 0.8rem;
     background-color: $back-color;
     background-clip: padding-box;

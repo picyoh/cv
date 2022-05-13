@@ -6,8 +6,8 @@
   }
 
   .title {
-    width: 65%;
-    margin-left: 15%;
+    display: flex;
+    //padding-left: 15%;
   }
 
   &__list {
@@ -34,7 +34,7 @@
   }
 
   &__name {
-    margin: 0.3rem;
+    //padding: 0.3rem;
   }
 }
 

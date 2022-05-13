@@ -11,8 +11,8 @@
     border-left: 0.3rem solid $primary-color;
 
     .imgContainer {
-      padding: 5%;
-      padding-right: 0;
+      //padding: 5%;
+      //padding-right: 0;
 
       img {
         border-radius: 0 1rem;
@@ -22,7 +22,7 @@
   &__title {
     &__first {
       position: relative;
-      padding-left: 1.2rem;
+      //padding-left: 1.2rem;
       border-left: 0.3rem solid $primary-color;
 
       &::after {
@@ -40,13 +40,13 @@
       }
 
       h4 {
-        margin-top: 0.8rem;
+        //padding-top: 0.8rem;
       }
     }
 
     &__left {
       position: relative;
-      padding-left: 1.2rem;
+      //padding-left: 1.2rem;
       border-top: 0.3rem solid $primary-color;
       border-left: 0.3rem solid $primary-color;
       border-top-left-radius: 1rem;
@@ -81,14 +81,14 @@
       }
 
       h4 {
-        margin-top: 0.8rem;
+        //padding-top: 0.8rem;
       }
     }
 
     &__right {
       order: 0;
       position: relative;
-      padding-right: 1.2rem;
+      //padding-right: 1.2rem;
       text-align: end;
       border: none;
       border-top: 0.3rem solid $primary-color;
@@ -124,7 +124,7 @@
       }
 
       h4 {
-        margin-top: 0.8rem;
+        //padding-top: 0.8rem;
       }
     }
   }
@@ -163,7 +163,7 @@
       // }
 
       .imgContainer {
-        padding-left: 0;
+        //padding-left: 0;
 
         img {
           border-radius: 1rem 0;
@@ -189,7 +189,7 @@
       }
 
       .imgContainer {
-        padding-right: 0;
+        //padding-right: 0;
         img {
           border-radius: 0 1rem;
         }
@@ -215,7 +215,7 @@
 
 .imgContainer {
   width: 100%;
-  padding: 5%;
+  //padding: 5%;
   object-fit: contain;
 }
 
